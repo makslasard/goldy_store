@@ -1,0 +1,309 @@
+{
+  "usersData": [
+    {
+      "phone": "+7 (999)-111-22-33",
+      "email": "userMax@gmail.com",
+      "password": "12345"
+    },
+    {
+      "phone": "+7 (999)-222-33-44",
+      "email": "userAdmin@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "popularCategory": [
+    "rings",
+    "earrings",
+    "engagement_rings",
+    "bracelets",
+    "necklaces_and_pendants",
+    "watch"
+  ],
+  "sales": {
+    "rings": [
+      {
+        "img": "",
+        "name": "Золотое гладкое обручальное кольцо 3 мм",
+        "size": "19",
+        "in_stock": true,
+        "stocks": "3",
+        "reviews": [
+          {
+            "img": "",
+            "name": "Александр",
+            "product": "Золотое гладкое обручальное кольцо 3 мм",
+            "review": "Удобное, по размеру подходит!"
+          }
+        ],
+        "sales": "10",
+        "quantity": "2",
+        "oldPrice": "11 640",
+        "newPrice": "10 760",
+        "popular": 10
+      }
+    ],
+    "engagement_rings": [
+      {
+        "img": "",
+        "name": "Золотые серьги 585 пробы",
+        "size": "19",
+        "in_stock": true,
+        "stocks": "3",
+        "reviews": [
+          {
+            "img": "",
+            "name": "Сергей",
+            "product": "Золотые серьги 585 пробы",
+            "review": "Красивые, удобные серьги!"
+          }
+        ],
+        "sales": "10",
+        "quantity": "2",
+        "oldPrice": "11 640",
+        "newPrice": "10 760",
+        "popular": 10
+      }
+    ],
+    "necklaces_and_pendants": [
+      {
+        "img": "",
+        "name": "Золотые серьги 585 пробы",
+        "size": "19",
+        "in_stock": true,
+        "stocks": "3",
+        "reviews": [
+          {
+            "img": "",
+            "name": "Сергей",
+            "product": "Золотые серьги 585 пробы",
+            "review": "Красивые, удобные серьги!"
+          }
+        ],
+        "sales": "10",
+        "quantity": "2",
+        "oldPrice": "11 640",
+        "newPrice": "10 760",
+        "popular": 9
+      }
+    ],
+    "earrings": [
+      {
+        "img": "",
+        "name": "Золотые серьги 585 пробы",
+        "size": "19",
+        "in_stock": true,
+        "stocks": "3",
+        "reviews": [
+          {
+            "img": "",
+            "name": "Сергей",
+            "product": "Золотые серьги 585 пробы",
+            "review": "Красивые, удобные серьги!"
+          }
+        ],
+        "sales": "10",
+        "quantity": "2",
+        "oldPrice": "11 640",
+        "newPrice": "10 760",
+        "popular": 9
+      }
+    ],
+    "bracelets": [
+      {
+        "img": "",
+        "name": "Золотой браслет 585 пробы",
+        "size": "19",
+        "in_stock": true,
+        "stocks": "3",
+        "reviews": [
+          {
+            "img": "",
+            "name": "Стас",
+            "product": "Золотой браслет 585 пробы",
+            "review": "Красивые, удобные серьги!"
+          }
+        ],
+        "sales": "10",
+        "quantity": "2",
+        "oldPrice": "11 640",
+        "newPrice": "10 760",
+        "popular": 8
+      }
+    ],
+    "watch": [
+      {
+        "img": "",
+        "name": "Золотые часы 585 пробы",
+        "size": "19",
+        "in_stock": true,
+        "stocks": "3",
+        "reviews": [
+          {
+            "img": "",
+            "name": "",
+            "product": "",
+            "review": ""
+          }
+        ],
+        "sales": "10",
+        "quantity": "2",
+        "old_price": "11 640",
+        "new_price": "10 760",
+        "popular": 8
+      }
+    ]
+  },
+  "discounts": [
+    {
+      "name": "Скидки на все украшения с бриллиантами",
+      "sale": "до 50%"
+    },
+    {
+      "name": "Скидки на кольца и браслеты",
+      "sale": "до 40%"
+    },
+    {
+      "name": "Снижение цен на обручальные кольца",
+      "sale": "до 60%"
+    }
+  ],
+  "productDay": [
+    {
+      "tags": [
+        "New",
+        "Хит",
+        "Sale"
+      ],
+      "rating": "4,2",
+      "name": "Кольцо из золота с бриллиантами",
+      "article_number": "Артикул: 1012076",
+      "new_price": "22 000",
+      "old_price": "26 000",
+      "timer": [
+        {
+          "hour": "12",
+          "minutes": "46",
+          "seconds": "51"
+        }
+      ],
+      "colors": [
+        "#D9D9D9",
+        "#F1CB7E",
+        "#EA8C48",
+        "#A7E492"
+      ],
+      "sizes": [
+        {
+          "16,5": true
+        },
+        {
+          "17": true
+        },
+        {
+          "17,5": true
+        },
+        {
+          "18": true
+        },
+        {
+          "18,5": true
+        },
+        {
+          "19": false
+        },
+        {
+          "19,5": false
+        },
+        {
+          "20": false
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "img": "",
+      "date": "",
+      "name": "",
+      "content": "Что будет описываться в статье"
+    },
+    {
+      "id": 2,
+      "img": "",
+      "date": "",
+      "name": "",
+      "content": "Что будет описываться в статье"
+    },
+    {
+      "id": 3,
+      "img": "",
+      "date": "",
+      "name": "",
+      "content": "Что будет описываться в статье"
+    },
+    {
+      "id": 4,
+      "img": "",
+      "date": "",
+      "name": "",
+      "content": "Что будет описываться в статье"
+    },
+    {
+      "id": 5,
+      "img": "",
+      "date": "",
+      "name": "",
+      "content": "Что будет описываться в статье"
+    }
+  ],
+  "navigateMenu": [
+    "Каталог",
+    "Акции",
+    "Бренды",
+    "Магазины",
+    "О нас",
+    "Доставка и оплата",
+    "Статьи"
+  ],
+  "selectCity": [
+    "Санкт-Петербург",
+    "Москва",
+    "Нижний Новгород",
+    "Ростов-на-дону"
+  ],
+  "mainBanner": [
+    {
+      "img": "",
+      "subtitle": "Суперскидка до 60%",
+      "title": "На брилианты"
+    },
+    {
+      "img": "",
+      "subtitle": "Суперскидка до 60%",
+      "title": "На брилианты"
+    },
+    {
+      "img": "",
+      "subtitle": "Суперскидка до 60%",
+      "title": "На брилианты"
+    }
+  ],
+  "basket": [],
+  "productCatalog": [
+    "Кольца",
+    "Серьги",
+    "Подвески",
+    "Цепочки",
+    "Браслеты",
+    "Свадьба",
+    "Часы",
+    "Аксессуары",
+    "Столовое серебро"
+  ],
+  "catalogFilters": [
+    "Мужские",
+    "Женские",
+    "Детские"
+  ]
+}
