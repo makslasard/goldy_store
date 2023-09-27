@@ -12,14 +12,44 @@
     }
   ],
   "popularCategory": [
+    {
+      "id": 1,
+      "img": "http://localhost:5000/assets/img/popular_categorys/rings-min.svg",
+      "name": "Кольца"
+    },
+    {
+      "id": 2,
+      "img": "http://localhost:5000/assets/img/popular_categorys/earrings-min.svg",
+      "name": "Серьги"
+    },
+    {
+      "id": 3,
+      "img": "http://localhost:5000/assets/img/popular_categorys/engagement_rings-min.svg",
+      "name": "Помолвочные кольца"
+    },
+    {
+      "id": 4,
+      "img": "http://localhost:5000/assets/img/popular_categorys/bracelets-min.svg",
+      "name": "Браслеты"
+    },
+    {
+      "id": 5,
+      "img": "http://localhost:5000/assets/img/popular_categorys/necklaces_and_pendants-min.svg",
+      "name": "Колье и подвески"
+    },
+    {
+      "id": 6,
+      "img": "http://localhost:5000/assets/img/popular_categorys/watch-min.svg",
+      "name": "Часы"
+    }
+  ],
+  "salesTabs": [
     "Кольца",
     "Серьги",
-    "Помолвочные кольца",
     "Браслеты",
-    "Колье и подвески",
     "Часы"
   ],
-  "sales": {
+  "salesCards": {
     "rings": [
       {
         "id": 1,
@@ -561,16 +591,22 @@
       }
     ]
   },
-  "discounts": [
+  "salesBanners": [
     {
+      "id": 1,
+      "img": "",
       "name": "Скидки на все украшения с бриллиантами",
       "sale": 50
     },
     {
+      "id": 2,
+      "img": "",
       "name": "Скидки на кольца и браслеты",
       "sale": 40
     },
     {
+      "id": 3,
+      "img": "",
       "name": "Снижение цен на обручальные кольца",
       "sale": 60
     }
@@ -683,16 +719,19 @@
   ],
   "mainBanner": [
     {
+      "id": 1,
       "img": "http://localhost:5000/assets/img/main_banner/briliant-min.svg",
       "subtitle": "Суперскидка до 60%",
       "title": "На брилианты"
     },
     {
+      "id": 2,
       "img": "http://localhost:5000/assets/img/main_banner/briliant-min.svg",
       "subtitle": "Суперскидка до 60%",
       "title": "На брилианты"
     },
     {
+      "id": 3,
       "img": "http://localhost:5000/assets/img/main_banner/briliant-min.svg",
       "subtitle": "Суперскидка до 60%",
       "title": "На брилианты"
