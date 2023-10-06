@@ -1,5 +1,5 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query'
-import { SalesTabsEnum } from '../../../../types/sales/salesTabs/salesTabs'
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react'
+import { ISalesTabs } from '../../../../types/sales/salesTabs/salesTabs'
 
 const API_URL = 'http://localhost:5000'
 
@@ -10,7 +10,7 @@ export const salesTabsApi = createApi({
 		baseUrl: API_URL,
 	}),
 	endpoints: (build) => ({
-		getAllSalesTabs: build.query<SalesTabsEnum, string>({
+		getAllSalesTabs: build.query<ISalesTabs[], string>({
 			query: () => ({
 				url: '/salesTabs',
 			}),

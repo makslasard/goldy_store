@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query'
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react'
 import { IBasketData } from '../../../types/basket/basket.types'
 
 const API_URL = 'http://localhost:5000'

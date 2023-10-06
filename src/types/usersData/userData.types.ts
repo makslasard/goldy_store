@@ -1,5 +1,7 @@
+import { IBasketData } from '../basket/basket.types'
+
 export interface IUserData {
-	phone: string
-	email: string
+	name: string
 	password: string
+	basket?: IBasketData[]
 }

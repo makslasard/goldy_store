@@ -11,6 +11,9 @@ import { salesCardsApi } from '../../services/api/sales/salesCards/serviceSalesC
 import { salesTabsApi } from '../../services/api/sales/salesTabs/serviceSalesTabs'
 import { selectCityApi } from '../../services/api/selectCity/serviceSelectCity'
 import { usersDataApi } from '../../services/api/usersData/serviceUserData'
+import { tabsCatalogApi } from '../../services/api/tabsCatalog/serviceTabsCatalog'
+import { getImgApi } from '../../services/api/getImg/serviceGetImg'
+import { productDayDescriptionApi } from '../../services/api/productDay/serviceProductDayDescription'
 
 export const rootReducer = combineReducers({
 	[articlesApi.reducerPath]: articlesApi.reducer,
@@ -25,4 +28,7 @@ export const rootReducer = combineReducers({
 	[salesTabsApi.reducerPath]: salesTabsApi.reducer,
 	[selectCityApi.reducerPath]: selectCityApi.reducer,
 	[usersDataApi.reducerPath]: usersDataApi.reducer,
+	[tabsCatalogApi.reducerPath]: tabsCatalogApi.reducer,
+	[getImgApi.reducerPath]: getImgApi.reducer,
+	[productDayDescriptionApi.reducerPath]: productDayDescriptionApi.reducer,
 })

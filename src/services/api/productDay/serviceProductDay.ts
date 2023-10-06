@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query'
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react'
 import { IProductDay } from '../../../types/productDay/productDay.types'
 
 const API_URL = 'http://localhost:5000'
@@ -10,9 +10,9 @@ export const productDayApi = createApi({
 		baseUrl: API_URL,
 	}),
 	endpoints: (build) => ({
-		getAllMainBanner: build.query<IProductDay, string>({
+		getAllProductInfo: build.query<IProductDay[], string>({
 			query: () => ({
-				url: '/productDay',
+				url: '/productDayInfo',
 			}),
 			providesTags: (result) => ['ProductDay'],
 		}),

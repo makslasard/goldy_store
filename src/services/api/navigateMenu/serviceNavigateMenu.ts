@@ -1,5 +1,5 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query'
-import { NavigateMenuEnum } from '../../../types/navigateMenu/navigateMenu.types'
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react'
+import { INavigateMenu } from '../../../types/navigateMenu/navigateMenu.types'
 
 const API_URL = 'http://localhost:5000'
 
@@ -10,7 +10,7 @@ export const navigateMenuApi = createApi({
 		baseUrl: API_URL,
 	}),
 	endpoints: (build) => ({
-		getAllNavigateMenu: build.query<NavigateMenuEnum, string>({
+		getAllNavigateMenu: build.query<INavigateMenu[], string>({
 			query: () => ({
 				url: '/navigateMenu',
 			}),

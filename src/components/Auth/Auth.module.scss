@@ -1,0 +1,11 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	.separator {
+		height: 10px;
+		width: 1px;
+		background-color: #303030;
+	}
+}

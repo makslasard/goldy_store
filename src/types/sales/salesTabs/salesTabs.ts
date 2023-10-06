@@ -1,6 +1,9 @@
-export enum SalesTabsEnum {
-	RINGS = 'Кольца',
-	EARRINGS = 'Серьги',
-	BRACELETS = 'Браслеты',
-	WATCH = 'Часы',
+export interface ISalesTabs {
+	id: number
+	name: string
+}
+
+export interface ISalesTabsProps {
+	id: number
+	name: string
 }

@@ -1,14 +1,164 @@
 {
   "usersData": [
     {
-      "phone": "+7 (999)-111-22-33",
-      "email": "userMax@gmail.com",
-      "password": "12345"
+      "userId": 1,
+      "name": "admin",
+      "password": "12345",
+      "basket": [
+        {
+          "id": 1,
+          "name": "Alex"
+        }
+      ],
+      "favourites": []
     },
     {
-      "phone": "+7 (999)-222-33-44",
-      "email": "userAdmin@gmail.com",
-      "password": "12345"
+      "userId": 2,
+      "name": "user",
+      "password": "12345",
+      "basket": [
+        {
+          "id": 2,
+          "name": "Alex"
+        }
+      ],
+      "favourites": []
+    }
+  ],
+  "image": [
+    {
+      "id": 1,
+      "title": "articles_1",
+      "category": "articles",
+      "img": "http://localhost:5000/assets/img/articles/preview_1-min.jpg"
+    },
+    {
+      "id": 2,
+      "title": "articles_2",
+      "category": "articles",
+      "img": "http://localhost:5000/assets/img/articles/preview_2-min.jpg"
+    },
+    {
+      "id": 3,
+      "title": "articles_3",
+      "category": "articles",
+      "img": "http://localhost:5000/assets/img/articles/preview_3-min.jpg"
+    },
+    {
+      "id": 4,
+      "title": "articles_4",
+      "category": "articles",
+      "img": "http://localhost:5000/assets/img/articles/preview_4-min.jpg"
+    },
+    {
+      "id": 5,
+      "title": "mainBanner",
+      "category": "mainBanner",
+      "img": "http://localhost:5000/assets/img/main_banner/ring-min.svg"
+    },
+    {
+      "id": 6,
+      "title": "logo",
+      "category": "header",
+      "img": "http://localhost:5000/assets/img/header/logo-min.svg"
+    }
+  ],
+  "salesCards": [
+    {
+      "id": 1,
+      "category": "watch",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 15,
+      "quantity": 2,
+      "oldPrice": 11640,
+      "newPrice": 10760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Женские"
+    },
+    {
+      "id": 2,
+      "category": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 20,
+      "quantity": 2,
+      "oldPrice": 11640,
+      "newPrice": 10760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Мужские"
+    },
+    {
+      "id": 3,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 11640,
+      "newPrice": 10760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
+    },
+    {
+      "id": 4,
+      "category": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 30,
+      "quantity": 2,
+      "oldPrice": 11640,
+      "newPrice": 10760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Женские"
     }
   ],
   "popularCategory": [
@@ -44,625 +194,143 @@
     }
   ],
   "salesTabs": [
-    "Кольца",
-    "Серьги",
-    "Браслеты",
-    "Часы"
-  ],
-  "salesCards": {
-    "rings": [
-      {
-        "id": 1,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотое гладкое обручальное кольцо 3 мм",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Александр",
-            "product": "Золотое гладкое обручальное кольцо 3 мм",
-            "review": "Удобное, по размеру подходит!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Женские"
-      },
-      {
-        "id": 2,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотое гладкое обручальное кольцо 3 мм",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Александр",
-            "product": "Золотое гладкое обручальное кольцо 3 мм",
-            "review": "Удобное, по размеру подходит!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Мужские"
-      },
-      {
-        "id": 3,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотое гладкое обручальное кольцо 3 мм",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Александр",
-            "product": "Золотое гладкое обручальное кольцо 3 мм",
-            "review": "Удобное, по размеру подходит!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Детские"
-      },
-      {
-        "id": 4,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотое гладкое обручальное кольцо 3 мм",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Александр",
-            "product": "Золотое гладкое обручальное кольцо 3 мм",
-            "review": "Удобное, по размеру подходит!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Женские"
-      }
-    ],
-    "engagement_rings": [
-      {
-        "id": 1,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Мужские"
-      },
-      {
-        "id": 2,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Женские"
-      },
-      {
-        "id": 3,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Мужские"
-      },
-      {
-        "id": 4,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Детские"
-      }
-    ],
-    "necklaces_and_pendants": [
-      {
-        "id": 1,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Мужские"
-      },
-      {
-        "id": 2,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Женские"
-      },
-      {
-        "id": 3,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Мужские"
-      },
-      {
-        "id": 4,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Детские"
-      }
-    ],
-    "earrings": [
-      {
-        "id": 1,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Мужские"
-      },
-      {
-        "id": 2,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Женские"
-      },
-      {
-        "id": 3,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Мужские"
-      },
-      {
-        "id": 4,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Детские"
-      }
-    ],
-    "bracelets": [
-      {
-        "id": 1,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Мужские"
-      },
-      {
-        "id": 2,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Женские"
-      },
-      {
-        "id": 3,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Мужские"
-      },
-      {
-        "id": 4,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Детские"
-      }
-    ],
-    "watch": [
-      {
-        "id": 1,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Мужские"
-      },
-      {
-        "id": 2,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Женские"
-      },
-      {
-        "id": 3,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Мужские"
-      },
-      {
-        "id": 4,
-        "img": "http://localhost:5000/assets/img/sales/rings/rings-min.svg",
-        "name": "Золотые серьги 585 пробы",
-        "size": 19,
-        "in_stock": true,
-        "stocks": 3,
-        "reviews": [
-          {
-            "img": "",
-            "name": "Сергей",
-            "product": "Золотые серьги 585 пробы",
-            "review": "Красивые, удобные серьги!"
-          }
-        ],
-        "sales": 10,
-        "quantity": 2,
-        "oldPrice": 11640,
-        "newPrice": 10760,
-        "popular": 10,
-        "filters": "Детские"
-      }
-    ]
-  },
-  "salesBanners": [
     {
       "id": 1,
-      "img": "",
-      "name": "Скидки на все украшения с бриллиантами",
-      "sale": 50
+      "name": "Кольца"
     },
     {
       "id": 2,
-      "img": "",
-      "name": "Скидки на кольца и браслеты",
-      "sale": 40
+      "name": "Серьги"
     },
     {
       "id": 3,
-      "img": "",
-      "name": "Снижение цен на обручальные кольца",
-      "sale": 60
+      "name": "Браслеты"
+    },
+    {
+      "id": 4,
+      "name": "Часы"
     }
   ],
-  "productDay": [
+  "salesBanners": [
     {
-      "tags": [
-        "New",
-        "Хит",
-        "Sale"
-      ],
+      "id": 1,
+      "img": "http://localhost:5000/assets/img/sales/diamond_jewelry-min.svg",
+      "name": "на украшения с бриллиантами",
+      "sale": 50,
+      "color": "#43807F"
+    },
+    {
+      "id": 2,
+      "img": "http://localhost:5000/assets/img/sales/gold_rings-min.svg",
+      "name": "на золотые украшения",
+      "sale": 40,
+      "color": "#E24B33"
+    },
+    {
+      "id": 3,
+      "img": "http://localhost:5000/assets/img/sales/gold_rings-min.svg",
+      "name": "на золотые украшения",
+      "sale": 60,
+      "color": "#E1A661"
+    }
+  ],
+  "productDayInfo": [
+    {
       "img": "http://localhost:5000/assets/img/product_day/product-min.svg",
-      "rating": "4,2",
+      "rating": "4,5",
       "name": "Кольцо из золота с бриллиантами",
-      "article_number": "Артикул: 1012076",
+      "item_number": "Артикул: 1012076",
       "newPrice": "22 000",
       "oldPrice": "26 000",
-      "timer": [
-        {
-          "hour": 12,
-          "minutes": 46,
-          "seconds": 51
-        }
-      ],
-      "colors": [
-        "#D9D9D9",
-        "#F1CB7E",
-        "#EA8C48",
-        "#A7E492"
-      ],
-      "sizes": [
-        {
-          "16,5": true
-        },
-        {
-          "17": true
-        },
-        {
-          "17,5": true
-        },
-        {
-          "18": true
-        },
-        {
-          "18,5": true
-        },
-        {
-          "19": false
-        },
-        {
-          "19,5": false
-        },
-        {
-          "20": false
-        }
-      ]
+      "sales": 45
+    }
+  ],
+  "productDayDescription": [
+    {
+      "id": 1,
+      "name": "New",
+      "color": "#495159",
+      "category": "tags"
+    },
+    {
+      "id": 2,
+      "name": "Хит",
+      "color": "#E1A661",
+      "category": "tags"
+    },
+    {
+      "id": 3,
+      "name": "Sale",
+      "color": "#5B8A8F",
+      "category": "tags"
+    },
+    {
+      "id": 4,
+      "color": "#D9D9D9",
+      "category": "colors"
+    },
+    {
+      "id": 5,
+      "color": "#F1CB7E",
+      "category": "colors"
+    },
+    {
+      "id": 6,
+      "color": "#EA8C48",
+      "category": "colors"
+    },
+    {
+      "id": 7,
+      "color": "#A7E492",
+      "category": "colors"
+    },
+    {
+      "id": 8,
+      "size": 16.5,
+      "in_stock": true,
+      "category": "sizes"
+    },
+    {
+      "id": 9,
+      "size": 17,
+      "in_stock": true,
+      "category": "sizes"
+    },
+    {
+      "id": 10,
+      "size": 17.5,
+      "in_stock": true,
+      "category": "sizes"
+    },
+    {
+      "id": 11,
+      "size": 18,
+      "in_stock": true,
+      "category": "sizes"
+    },
+    {
+      "id": 12,
+      "size": 18.5,
+      "in_stock": true,
+      "category": "sizes"
+    },
+    {
+      "id": 13,
+      "size": 19,
+      "in_stock": false,
+      "category": "sizes"
+    },
+    {
+      "id": 14,
+      "size": 19.5,
+      "in_stock": false,
+      "category": "sizes"
+    },
+    {
+      "id": 15,
+      "size": 20,
+      "in_stock": false,
+      "category": "sizes"
     }
   ],
   "articles": [
@@ -702,14 +370,73 @@
       "content": "Что будет описываться в статье"
     }
   ],
+  "tabsCatalog": [
+    {
+      "id": 1,
+      "name": "Кольца"
+    },
+    {
+      "id": 2,
+      "name": "Серьги"
+    },
+    {
+      "id": 3,
+      "name": "Подвески"
+    },
+    {
+      "id": 4,
+      "name": "Цепочки"
+    },
+    {
+      "id": 5,
+      "name": "Браслеты"
+    },
+    {
+      "id": 6,
+      "name": "Свадьба"
+    },
+    {
+      "id": 7,
+      "name": "Часы"
+    },
+    {
+      "id": 8,
+      "name": "Аксессуары"
+    },
+    {
+      "id": 9,
+      "name": "Столовое серебро"
+    }
+  ],
   "navigateMenu": [
-    "Каталог",
-    "Акции",
-    "Бренды",
-    "Магазины",
-    "О нас",
-    "Доставка и оплата",
-    "Статьи"
+    {
+      "id": 1,
+      "name": "Каталог"
+    },
+    {
+      "id": 2,
+      "name": "Акции"
+    },
+    {
+      "id": 3,
+      "name": "Бренды"
+    },
+    {
+      "id": 4,
+      "name": "Магазины"
+    },
+    {
+      "id": 5,
+      "name": "О нас"
+    },
+    {
+      "id": 6,
+      "name": "Доставка и оплата"
+    },
+    {
+      "id": 7,
+      "name": "Статьи"
+    }
   ],
   "selectCity": [
     "Санкт-Петербург",
@@ -738,17 +465,6 @@
     }
   ],
   "basket": [],
-  "productCatalog": [
-    "Кольца",
-    "Серьги",
-    "Подвески",
-    "Цепочки",
-    "Браслеты",
-    "Свадьба",
-    "Часы",
-    "Аксессуары",
-    "Столовое серебро"
-  ],
   "catalogFilters": [
     "Мужские",
     "Женские",

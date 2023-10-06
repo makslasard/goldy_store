@@ -1,5 +1,22 @@
-import { IProductCard } from '../../productCard.types'
-
 export interface ISalesCards {
-	card: IProductCard
+	id: number
+	img: string
+	name: string
+	size: number
+	in_stock: boolean
+	stock: number
+	reviews: IProductReviews
+	sales: number
+	quantity: number
+	oldPrice: number
+	newPrice: number
+	popular: number
+	rating: number
+}
+
+interface IProductReviews {
+	img: string
+	name: string
+	product: string
+	review: string
 }

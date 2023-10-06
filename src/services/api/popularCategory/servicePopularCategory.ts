@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query'
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react'
 import { IPopularCategory } from '../../../types/popularCategory/popularCategory.types'
 
 const API_URL = 'http://localhost:5000'
@@ -10,7 +10,7 @@ export const popularCategoryApi = createApi({
 		baseUrl: API_URL,
 	}),
 	endpoints: (build) => ({
-		getAllMainBanner: build.query<IPopularCategory[], string>({
+		getAllPopularCategory: build.query<IPopularCategory[], string>({
 			query: () => ({
 				url: '/popularCategory',
 			}),

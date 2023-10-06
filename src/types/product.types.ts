@@ -5,13 +5,14 @@ export interface IProduct {
 	size: number
 	in_stock: boolean
 	stock: number
-	reviews: IProductReviews
+	// reviews: IProductReviews
 	sales: number
 	quantity: number
 	oldPrice: number
 	newPrice: number
 	popular: number
 	rating: number
+	colors: string[]
 }
 
 interface IProductReviews {

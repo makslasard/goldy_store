@@ -1,0 +1,24 @@
+.wrapper {
+	height: 137px;
+	margin-top: 10px;
+
+	.top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.add_product {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+		}
+	}
+
+	.bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: #f8f8f8;
+	}
+}

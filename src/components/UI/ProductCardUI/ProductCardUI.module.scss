@@ -1,0 +1,93 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+
+	.card {
+		width: 290px;
+
+		.view {
+			.tags_img {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: absolute;
+				top: 15px;
+				height: 22px;
+				width: 72px;
+				background-color: #00b775;
+				color: #fff;
+				border-radius: 8px;
+				font-size: 12px;
+				font-family: 'Montserrat', sans-serif;
+				z-index: 1;
+			}
+
+			.favourites {
+				position: absolute;
+				top: 15px;
+				right: 15px;
+
+				button {
+					border: none;
+					background: transparent;
+				}
+			}
+		}
+
+		.description {
+			.price {
+				font-family: 'Montserrat', sans-serif;
+
+				.title {
+					font-size: 14px;
+				}
+
+				h3 {
+					font-size: 20px;
+					font-weight: 600;
+				}
+
+				.old_price {
+					display: flex;
+					align-items: center;
+					font-family: 'Montserrat', sans-serif;
+
+					.tags_price {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 18px;
+						width: 37px;
+						background-color: #ffecec;
+						color: #ff4611;
+						border-radius: 4px;
+						font-weight: 600;
+						margin-left: 10px;
+					}
+
+					span {
+						font-size: 14px;
+						color: #7a7a7a;
+						text-decoration: line-through;
+					}
+				}
+			}
+
+			.reviews {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				font-family: 'Montserrat', sans-serif;
+
+				.reviews_right {
+					color: #7a7a7a;
+					font-weight: 600;
+					font-size: 14px;
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+}

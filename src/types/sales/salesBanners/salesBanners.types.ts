@@ -3,4 +3,5 @@ export interface ISalesBanners {
 	img: string
 	name: string
 	sale: number
+	color: string
 }
