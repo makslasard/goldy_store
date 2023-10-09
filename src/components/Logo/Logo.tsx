@@ -9,7 +9,7 @@ const Logo: React.FC = () => {
 	return (
 		<div className={style.wrapper}>
 			<div className={style.logo}>
-				{logo && logo.map((item) => <img key={item.id} src={item.img} alt={item.title} />)}
+				{logo?.map((item) => <img key={item.id} src={item.img} alt={item.title} />)}
 			</div>
 		</div>
 	)

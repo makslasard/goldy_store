@@ -10,12 +10,11 @@ const HeaderMenu: React.FC = () => {
 	return (
 		<div className={style.wrapper}>
 			<ul className={style.menu}>
-				{navigateMenu &&
-					navigateMenu.map((item) => (
-						<li key={item.id} className={style.menu_item}>
-							{item.name}
-						</li>
-					))}
+				{navigateMenu?.map((item) => (
+					<li key={item.id} className={style.menu_item}>
+						{item.name}
+					</li>
+				))}
 			</ul>
 		</div>
 	)

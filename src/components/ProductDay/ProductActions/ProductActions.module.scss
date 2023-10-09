@@ -1,0 +1,97 @@
+.wrapper_buttons {
+	display: flex;
+	justify-content: space-between;
+
+	.buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		.in_basket {
+			button {
+				width: 400px;
+				height: 56px;
+				border: none;
+				background-color: #303030;
+				color: #fff;
+				text-transform: uppercase;
+				font-family: 'Montserrat', sans-serif;
+				transition: all 0.3s;
+
+				&:hover {
+					cursor: pointer;
+					color: #fff;
+					background-color: #505050;
+				}
+			}
+		}
+
+		.buy {
+			button {
+				width: 400px;
+				height: 56px;
+				border: 1px solid #303030;
+				background-color: #fff;
+				text-transform: uppercase;
+				font-family: 'Montserrat', sans-serif;
+				transition: all 0.3s;
+
+				&:hover {
+					cursor: pointer;
+					color: #fff;
+					background-color: #303030;
+				}
+			}
+		}
+	}
+
+	.actions {
+		.save {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin-bottom: 20px;
+
+			&:hover {
+				cursor: pointer;
+				opacity: 0.5;
+			}
+
+			.save_icon {
+				height: 20px;
+				width: 20px;
+			}
+		}
+
+		.compare {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin-bottom: 20px;
+
+			&:hover {
+				cursor: pointer;
+				opacity: 0.5;
+			}
+
+			.compare_icon {
+				height: 20px;
+				width: 20px;
+			}
+		}
+
+		.share {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+
+			&:hover {
+				cursor: pointer;
+				opacity: 0.5;
+			}
+
+			.share_icon {
+			}
+		}
+	}
+}

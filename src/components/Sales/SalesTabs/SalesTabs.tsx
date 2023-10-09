@@ -4,13 +4,11 @@ import { salesTabsApi } from '../../../services/api/sales/salesTabs/serviceSales
 
 import style from './SalesTabs.module.scss'
 import { salesCardsApi } from '../../../services/api/sales/salesCards/serviceSalesCards'
-import ProductCardUI from '../../UI/ProductCardUI/ProductCardUI'
+import SalesCards from '../SalesCards/SalesCards'
 
 const SalesTabs: React.FC = () => {
 	const [currentTab, setCurrentTab] = useState<string>('')
 	const { data: salesTabs } = salesTabsApi.useGetAllSalesTabsQuery('')
-	const { data: categoryCards } = salesCardsApi.useGetAllSalesCardsCategoryQuery('rings')
-	console.log(categoryCards)
 
 	const onChange = (key: string) => {
 		setCurrentTab(key)
@@ -29,7 +27,7 @@ const SalesTabs: React.FC = () => {
 		return salesTabs?.map((tab) => ({
 			key: `${tab.id}`,
 			label: tab.name,
-			children: <ProductCardUI />,
+			children: <SalesCards />,
 		}))
 	}
 

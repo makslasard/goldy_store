@@ -12,18 +12,17 @@ const PopularCategory: React.FC = () => {
 		<div className={style.wrapper}>
 			<h2>Популярные категории</h2>
 			<div className={style.card}>
-				{popularCategory &&
-					popularCategory.map((item) => (
-						<Card
-							key={item.id}
-							hoverable
-							className={style.card_item}
-							cover={<img alt="product" src={item.img} className={style.card_img} />}>
-							<div>
-								<p>{item.name}</p>
-							</div>
-						</Card>
-					))}
+				{popularCategory?.map((item) => (
+					<Card
+						key={item.id}
+						hoverable
+						className={style.card_item}
+						cover={<img alt="product" src={item.img} className={style.card_img} />}>
+						<div>
+							<p>{item.name}</p>
+						</div>
+					</Card>
+				))}
 			</div>
 		</div>
 	)

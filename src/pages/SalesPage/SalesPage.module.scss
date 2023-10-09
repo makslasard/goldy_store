@@ -1,0 +1,47 @@
+.wrapper {
+	.title {
+		margin-bottom: 20px;
+
+		h2 {
+			font-weight: 600;
+		}
+	}
+
+	.sales_list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 50px 50px;
+
+		.sale {
+			padding: 10px;
+
+			&:hover {
+				cursor: pointer;
+				transition: all 0.3s;
+				box-shadow:
+					0 1px 2px -2px rgba(0, 0, 0, 0.16),
+					0 3px 6px 0 rgba(0, 0, 0, 0.12),
+					0 5px 12px 4px rgba(0, 0, 0, 0.09);
+			}
+
+			.image {
+				margin-bottom: 10px;
+			}
+
+			.title {
+				width: 370px;
+				margin-bottom: 5px;
+
+				h4 {
+					font-size: 16px;
+					font-weight: 500;
+					text-transform: none;
+				}
+			}
+
+			.date {
+			}
+		}
+	}
+}

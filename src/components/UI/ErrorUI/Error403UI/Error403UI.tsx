@@ -1,7 +1,7 @@
 import React from 'react'
 import { Result } from 'antd'
 
-import ButtonUI from '../../ButtonUI/ButtonUI'
+import ButtonActiveUI from '../../ButtonUI/ButtonActiveUI/ButtonActiveUI'
 
 import style from './Error403UI.module.scss'
 
@@ -12,7 +12,7 @@ const Error403UI: React.FC = () => {
 				status="403"
 				title="403"
 				subTitle="Извините, вы не авторизованы для доступа к этой странице."
-				extra={<ButtonUI>Вернуться на главную</ButtonUI>}
+				extra={<ButtonActiveUI>Вернуться на главную</ButtonActiveUI>}
 			/>
 		</div>
 	)

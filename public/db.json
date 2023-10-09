@@ -25,42 +25,51 @@
       "favourites": []
     }
   ],
-  "image": [
+  "tabsCatalog": [
     {
       "id": 1,
-      "title": "articles_1",
-      "category": "articles",
-      "img": "http://localhost:5000/assets/img/articles/preview_1-min.jpg"
+      "name": "Кольца",
+      "category": "rings"
     },
     {
       "id": 2,
-      "title": "articles_2",
-      "category": "articles",
-      "img": "http://localhost:5000/assets/img/articles/preview_2-min.jpg"
+      "name": "Серьги",
+      "category": "earrings"
     },
     {
       "id": 3,
-      "title": "articles_3",
-      "category": "articles",
-      "img": "http://localhost:5000/assets/img/articles/preview_3-min.jpg"
+      "name": "Подвески",
+      "category": "suspensions"
     },
     {
       "id": 4,
-      "title": "articles_4",
-      "category": "articles",
-      "img": "http://localhost:5000/assets/img/articles/preview_4-min.jpg"
+      "name": "Цепочки",
+      "category": "chains"
     },
     {
       "id": 5,
-      "title": "mainBanner",
-      "category": "mainBanner",
-      "img": "http://localhost:5000/assets/img/main_banner/ring-min.svg"
+      "name": "Браслеты",
+      "category": "bracelets"
     },
     {
       "id": 6,
-      "title": "logo",
-      "category": "header",
-      "img": "http://localhost:5000/assets/img/header/logo-min.svg"
+      "name": "Свадьба",
+      "category": "wedding"
+    },
+    {
+      "id": 7,
+      "name": "Часы",
+      "category": "watch"
+    },
+    {
+      "id": 8,
+      "name": "Аксуссуары",
+      "category": "accessories"
+    },
+    {
+      "id": 9,
+      "name": "Столовое серебро",
+      "category": "silverware"
     }
   ],
   "salesCards": [
@@ -336,76 +345,31 @@
   "articles": [
     {
       "id": 1,
-      "img": "http://localhost:5000/assets/img/articles/article_1/preview_1-min.jpg",
+      "img": "http://localhost:5000/assets/img/articles/preview_3-min.jpg",
       "date": "21 сентября 2021",
       "name": "Обручальные кольца: тренды 2021",
       "content": "Что будет описываться в статье"
     },
     {
       "id": 2,
-      "img": "http://localhost:5000/assets/img/articles/article_2/preview_2-min.jpg",
+      "img": "http://localhost:5000/assets/img/articles/preview_4-min.jpg",
       "date": "25 сентября 2021",
       "name": "Главные ювелирные тренды года",
       "content": "Что будет описываться в статье"
     },
     {
       "id": 3,
-      "img": "http://localhost:5000/assets/img/articles/article_3/preview_3-min.jpg",
+      "img": "http://localhost:5000/assets/img/articles/preview_3-min.jpg",
       "date": "21 сентября 2021",
       "name": "Жемчуг: 7 малоизвестных фактов о культовом украшении",
       "content": "Что будет описываться в статье"
     },
     {
       "id": 4,
-      "img": "http://localhost:5000/assets/img/articles/article_4/preview_4-min.jpg",
+      "img": "http://localhost:5000/assets/img/articles/preview_4-min.jpg",
       "date": "21 сентября 2021",
       "name": "Как отличить золото от подделки: 10 практических советов",
       "content": "Что будет описываться в статье"
-    },
-    {
-      "id": 5,
-      "img": "http://localhost:5000/assets/img/articles/article_5/preview_5-min.jpg",
-      "date": "21 сентября 2021",
-      "name": "Главные ювелирные тренды года",
-      "content": "Что будет описываться в статье"
-    }
-  ],
-  "tabsCatalog": [
-    {
-      "id": 1,
-      "name": "Кольца"
-    },
-    {
-      "id": 2,
-      "name": "Серьги"
-    },
-    {
-      "id": 3,
-      "name": "Подвески"
-    },
-    {
-      "id": 4,
-      "name": "Цепочки"
-    },
-    {
-      "id": 5,
-      "name": "Браслеты"
-    },
-    {
-      "id": 6,
-      "name": "Свадьба"
-    },
-    {
-      "id": 7,
-      "name": "Часы"
-    },
-    {
-      "id": 8,
-      "name": "Аксессуары"
-    },
-    {
-      "id": 9,
-      "name": "Столовое серебро"
     }
   ],
   "navigateMenu": [
@@ -474,5 +438,116 @@
     "Популярности",
     "По названию",
     "По рейтингу"
+  ],
+  "saleArticle": [
+    {
+      "id": 1,
+      "name": "Скидки на золото стали ещё больше!",
+      "date": "с 15 сентября по 30 сентября",
+      "img": "http://localhost:5000/assets/img/sales/preview_sales_article-min.svg",
+      "description": "Начинаем осень выгодно! Выбирайте золотые украшения из представленного ассортимента, заказывайте по промокоду GOLD15 и получайте дополнительную скидку -15%.Промокод может быть использован неограниченное количество раз для каждого клиента."
+    }
+  ],
+  "image": [
+    {
+      "id": 1,
+      "title": "articles_1",
+      "category": "articles",
+      "img": "http://localhost:5000/assets/img/articles/preview_1-min.jpg"
+    },
+    {
+      "id": 2,
+      "title": "articles_2",
+      "category": "articles",
+      "img": "http://localhost:5000/assets/img/articles/preview_2-min.jpg"
+    },
+    {
+      "id": 3,
+      "title": "articles_3",
+      "category": "articles",
+      "img": "http://localhost:5000/assets/img/articles/preview_3-min.jpg"
+    },
+    {
+      "id": 4,
+      "title": "articles_4",
+      "category": "articles",
+      "img": "http://localhost:5000/assets/img/articles/preview_4-min.jpg"
+    },
+    {
+      "id": 5,
+      "title": "mainBanner",
+      "category": "mainBanner",
+      "img": "http://localhost:5000/assets/img/main_banner/ring-min.svg"
+    },
+    {
+      "id": 6,
+      "title": "logo",
+      "category": "header",
+      "img": "http://localhost:5000/assets/img/header/logo-min.svg"
+    },
+    {
+      "id": 7,
+      "title": "not-found",
+      "category": "not-found",
+      "img": "http://localhost:5000/assets/img/basket_notfound_icon-min.svg"
+    }
+  ],
+  "saleListPage": [
+    {
+      "id": 1,
+      "title": "Берите больше — платите меньше! Скидки до 70% + 23%",
+      "category": "salePage",
+      "img": "http://localhost:5000/assets/img/sales/preview_sales-min.svg",
+      "date": "с 31 августа по 30 сентября"
+    },
+    {
+      "id": 2,
+      "title": "Берите больше — платите меньше! Скидки до 70% + 23%",
+      "category": "salePage",
+      "img": "http://localhost:5000/assets/img/sales/preview_sales-min.svg",
+      "date": "с 31 августа по 30 сентября"
+    },
+    {
+      "id": 3,
+      "title": "Берите больше — платите меньше! Скидки до 70% + 23%",
+      "category": "salePage",
+      "img": "http://localhost:5000/assets/img/sales/preview_sales-min.svg",
+      "date": "с 31 августа по 30 сентября"
+    },
+    {
+      "id": 4,
+      "title": "Берите больше — платите меньше! Скидки до 70% + 23%",
+      "category": "salePage",
+      "img": "http://localhost:5000/assets/img/sales/preview_sales-min.svg",
+      "date": "с 31 августа по 30 сентября"
+    },
+    {
+      "id": 5,
+      "title": "Берите больше — платите меньше! Скидки до 70% + 23%",
+      "category": "salePage",
+      "img": "http://localhost:5000/assets/img/sales/preview_sales-min.svg",
+      "date": "с 31 августа по 30 сентября"
+    },
+    {
+      "id": 6,
+      "title": "Берите больше — платите меньше! Скидки до 70% + 23%",
+      "category": "salePage",
+      "img": "http://localhost:5000/assets/img/sales/preview_sales-min.svg",
+      "date": "с 31 августа по 30 сентября"
+    },
+    {
+      "id": 7,
+      "title": "Берите больше — платите меньше! Скидки до 70% + 23%",
+      "category": "salePage",
+      "img": "http://localhost:5000/assets/img/sales/preview_sales-min.svg",
+      "date": "с 31 августа по 30 сентября"
+    },
+    {
+      "id": 8,
+      "title": "Берите больше — платите меньше! Скидки до 70% + 23%",
+      "category": "salePage",
+      "img": "http://localhost:5000/assets/img/sales/preview_sales-min.svg",
+      "date": "с 31 августа по 30 сентября"
+    }
   ]
 }

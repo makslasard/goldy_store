@@ -1,7 +1,7 @@
 import React from 'react'
 import { Result } from 'antd'
 
-import ButtonUI from '../../ButtonUI/ButtonUI'
+import ButtonActiveUI from '../../ButtonUI/ButtonActiveUI/ButtonActiveUI'
 
 import style from './Error500UI.module.scss'
 
@@ -12,7 +12,7 @@ const Error500UI: React.FC = () => {
 				status="500"
 				title="500"
 				subTitle="Извините, что-то пошло не так."
-				extra={<ButtonUI>Вернуться на главную</ButtonUI>}
+				extra={<ButtonActiveUI>Вернуться на главную</ButtonActiveUI>}
 			/>
 		</div>
 	)

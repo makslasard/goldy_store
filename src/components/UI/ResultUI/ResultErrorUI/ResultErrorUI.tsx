@@ -1,6 +1,6 @@
 import React from 'react'
 import { Result } from 'antd'
-import ButtonUI from '../../ButtonUI/ButtonUI'
+import ButtonActiveUI from '../../ButtonUI/ButtonActiveUI/ButtonActiveUI'
 
 import style from './ResultErrorUI.module.scss'
 
@@ -11,7 +11,7 @@ const ResultErrorUI: React.FC = () => {
 				status="error"
 				title="Оплата не удалась"
 				subTitle="Банк отказал в проведении опецарии в связи с недостатком средств"
-				extra={[<ButtonUI>Попробовать снова</ButtonUI>]}
+				extra={[<ButtonActiveUI>Попробовать снова</ButtonActiveUI>]}
 			/>
 		</div>
 	)

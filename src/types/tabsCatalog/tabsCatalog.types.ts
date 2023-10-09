@@ -1,6 +1,7 @@
 export interface ITabsCatalog {
 	id: number
 	name: string
+	category: string
 }
 
 // export enum TabsCatalogEnum {

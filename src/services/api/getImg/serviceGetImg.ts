@@ -34,5 +34,14 @@ export const getImgApi = createApi({
 			}),
 			providesTags: (result) => ['getImg'],
 		}),
+		getAllImgNotFound: build.query<IGetImgTypes[], string>({
+			query: (title) => ({
+				url: '/image',
+				params: {
+					title,
+				},
+			}),
+			providesTags: (result) => ['getImg'],
+		}),
 	}),
 })

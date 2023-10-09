@@ -1,0 +1,20 @@
+.tags {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	.tag {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 15px;
+		height: 21px;
+		width: 50px;
+
+		p {
+			font-size: 13px;
+			font-weight: 500;
+			color: #fff;
+		}
+	}
+}

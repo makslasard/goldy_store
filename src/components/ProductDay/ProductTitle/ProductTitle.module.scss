@@ -1,0 +1,46 @@
+.wrapper_title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 60px;
+
+	.title {
+		h2 {
+			font-size: 32px;
+			font-weight: 600;
+		}
+	}
+
+	.slide {
+		display: flex;
+		gap: 5px;
+
+		.left_arrow {
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 1px solid #303030;
+			background-color: #fff;
+
+			&:hover {
+				cursor: pointer;
+				transition: all 0.3s;
+				opacity: 0.5;
+			}
+		}
+
+		.right_arrow {
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 1px solid #303030;
+			background-color: #fff;
+
+			&:hover {
+				cursor: pointer;
+				transition: all 0.3s;
+				opacity: 0.5;
+			}
+		}
+	}
+}

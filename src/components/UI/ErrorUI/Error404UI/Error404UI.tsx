@@ -1,7 +1,7 @@
 import React from 'react'
 import { Result } from 'antd'
 
-import ButtonUI from '../../ButtonUI/ButtonUI'
+import ButtonActiveUI from '../../ButtonUI/ButtonActiveUI/ButtonActiveUI'
 
 import style from './Error404UI.module.scss'
 
@@ -12,7 +12,7 @@ const Error404UI: React.FC = () => {
 				status="404"
 				title="404"
 				subTitle="К сожалению, страница, которую вы посетили, не существует."
-				extra={<ButtonUI>Вернуться на главную</ButtonUI>}
+				extra={<ButtonActiveUI>Вернуться на главную</ButtonActiveUI>}
 			/>
 		</div>
 	)

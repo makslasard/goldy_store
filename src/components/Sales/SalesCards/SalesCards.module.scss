@@ -1,3 +1,7 @@
 .wrapper {
-	display: flex;
+	.wrapper_card {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 }

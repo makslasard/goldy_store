@@ -14,6 +14,8 @@ import { usersDataApi } from '../../services/api/usersData/serviceUserData'
 import { tabsCatalogApi } from '../../services/api/tabsCatalog/serviceTabsCatalog'
 import { getImgApi } from '../../services/api/getImg/serviceGetImg'
 import { productDayDescriptionApi } from '../../services/api/productDay/serviceProductDayDescription'
+import { salesListPageApi } from '../../services/api/sales/salesListPage/salesListPage'
+import { saleArticleApi } from '../../services/api/sales/saleArticle/serviceSaleArticle'
 
 export const rootReducer = combineReducers({
 	[articlesApi.reducerPath]: articlesApi.reducer,
@@ -31,4 +33,6 @@ export const rootReducer = combineReducers({
 	[tabsCatalogApi.reducerPath]: tabsCatalogApi.reducer,
 	[getImgApi.reducerPath]: getImgApi.reducer,
 	[productDayDescriptionApi.reducerPath]: productDayDescriptionApi.reducer,
+	[salesListPageApi.reducerPath]: salesListPageApi.reducer,
+	[saleArticleApi.reducerPath]: saleArticleApi.reducer,
 })

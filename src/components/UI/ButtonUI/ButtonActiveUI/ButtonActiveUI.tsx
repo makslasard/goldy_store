@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button, Space } from 'antd'
 
-import style from './Button.module.scss'
+import style from './ButtonActiveUI.module.scss'
 
-const ButtonUI: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const ButtonActiveUI: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 	return (
 		<div className={style.wrapper}>
 			<Space wrap>
@@ -15,4 +15,4 @@ const ButtonUI: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 	)
 }
 
-export default ButtonUI
+export default ButtonActiveUI

@@ -1,7 +1,44 @@
 .wrapper {
 	.carousel {
+		position: relative;
 		height: 560px;
 		background-color: #f8f8f8;
+	}
+
+	.arrow {
+		.left_arrow {
+			position: absolute;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 1px solid #303030;
+			background-color: transparent;
+			top: 260px;
+			left: 30px;
+
+			&:hover {
+				cursor: pointer;
+				transition: all 0.3s;
+				opacity: 0.5;
+			}
+		}
+
+		.right_arrow {
+			position: absolute;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 1px solid #303030;
+			background-color: transparent;
+			top: 260px;
+			right: 30px;
+
+			&:hover {
+				cursor: pointer;
+				transition: all 0.3s;
+				opacity: 0.5;
+			}
+		}
 	}
 
 	.slide {

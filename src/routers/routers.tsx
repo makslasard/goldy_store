@@ -7,6 +7,8 @@ import FavouritesPage from '../pages/FavouritesPage/FavouritesPage'
 import ProductPage from '../pages/ProductPage/ProductPage'
 import StocksPage from '../pages/Stocks/StocksPage'
 import UserProfilePage from '../pages/UserProfilePage/UserProfilePage'
+import SalesPage from '../pages/SalesPage/SalesPage'
+import SaleArticlePage from '../pages/SalesPage/SaleArticlePage/SaleArticlePage'
 
 export enum RoutersNames {
 	HOME = '/',
@@ -15,6 +17,8 @@ export enum RoutersNames {
 	CATALOG = '/catalog',
 	FAVOURITES = '/favourites',
 	PRODUCT = '/product',
+	SALES = '/sales',
+	SALE_ARTICLE = '/sales/:id',
 	STOCKS = '/stocks',
 	USER_PROFILE = '/user_profile',
 }
@@ -31,4 +35,6 @@ export const publicRoutes = [
 	{ path: RoutersNames.PRODUCT, component: <ProductPage /> },
 	{ path: RoutersNames.STOCKS, component: <StocksPage /> },
 	{ path: RoutersNames.BASKET, component: <BasketPage /> },
+	{ path: RoutersNames.SALES, component: <SalesPage /> },
+	{ path: RoutersNames.SALE_ARTICLE, component: <SaleArticlePage /> },
 ]
