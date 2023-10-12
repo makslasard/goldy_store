@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BarChartOutlined, HeartOutlined, SendOutlined } from '@ant-design/icons'
+import { BarChartOutlined, HeartOutlined, ShareAltOutlined } from '@ant-design/icons'
 
 import style from './ProductActions.module.scss'
 
@@ -34,7 +34,7 @@ const ProductActions = () => {
 				</div>
 				<div className={style.share}>
 					<div>
-						<SendOutlined />
+						<ShareAltOutlined />
 					</div>
 					<div>
 						<p>Поделиться</p>

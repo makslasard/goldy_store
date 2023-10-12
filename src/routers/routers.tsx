@@ -9,6 +9,10 @@ import StocksPage from '../pages/Stocks/StocksPage'
 import UserProfilePage from '../pages/UserProfilePage/UserProfilePage'
 import SalesPage from '../pages/SalesPage/SalesPage'
 import SaleArticlePage from '../pages/SalesPage/SaleArticlePage/SaleArticlePage'
+import Brands from '../pages/Brands/Brands'
+import Shops from '../pages/ Shops/Shops'
+import AboutUs from '../pages/AboutUs/AboutUs'
+import DeliveryAndPayment from '../pages/DeliveryAndPayment/DeliveryAndPayment'
 
 export enum RoutersNames {
 	HOME = '/',
@@ -21,6 +25,10 @@ export enum RoutersNames {
 	SALE_ARTICLE = '/sales/:id',
 	STOCKS = '/stocks',
 	USER_PROFILE = '/user_profile',
+	BRANDS = '/brands',
+	SHOPS = '/shops',
+	ABOUT_US = '/about_us',
+	DELIVER_AND_PAYMENT = '/delivery_and_payment',
 }
 
 export const privateRoutes = [
@@ -37,4 +45,8 @@ export const publicRoutes = [
 	{ path: RoutersNames.BASKET, component: <BasketPage /> },
 	{ path: RoutersNames.SALES, component: <SalesPage /> },
 	{ path: RoutersNames.SALE_ARTICLE, component: <SaleArticlePage /> },
+	{ path: RoutersNames.BRANDS, component: <Brands /> },
+	{ path: RoutersNames.SHOPS, component: <Shops /> },
+	{ path: RoutersNames.ABOUT_US, component: <AboutUs /> },
+	{ path: RoutersNames.DELIVER_AND_PAYMENT, component: <DeliveryAndPayment /> },
 ]

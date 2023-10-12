@@ -1,5 +1,8 @@
 .wrapper {
 	.title {
+		h2 {
+			margin-bottom: 40px;
+		}
 	}
 
 	.tabs {
@@ -19,6 +22,8 @@
 		}
 
 		.wrapper_tabs {
+			margin-bottom: 40px;
+
 			.tabs_button {
 				width: 100%;
 				height: 45px;
@@ -40,5 +45,12 @@
 				}
 			}
 		}
+	}
+
+	.actions {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 45px;
 	}
 }

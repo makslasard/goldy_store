@@ -1,5 +1,9 @@
-export enum CatalogSortingEnum {
-	SORTING_BY_POPULARITY = 'По популярности',
-	SORTING_BY_NAME = 'По названию',
-	SORTING_BY_RATING = 'По рейтингу',
+export interface ICatalogSorting {
+	id: number
+	name: string
+	sortOption: string
+}
+
+export interface ICatalogSortingProps {
+	optionSort: ICatalogSorting[]
 }

@@ -1,9 +1,19 @@
 .wrapper {
-	p {
-		&:hover {
-			opacity: 0.5;
-			cursor: pointer;
-			transition: all 0.3s;
+	.registration_form {
+		button {
+			border: none;
+			background-color: transparent;
+
+			p {
+				font-family: 'Montserrat', sans-serif;
+				font-size: 14px;
+
+				&:hover {
+					opacity: 0.5;
+					cursor: pointer;
+					transition: all 0.3s;
+				}
+			}
 		}
 	}
 }

@@ -10,14 +10,18 @@ import { salesBannersApi } from '../../services/api/sales/salesBanners/serviceSa
 import { salesCardsApi } from '../../services/api/sales/salesCards/serviceSalesCards'
 import { salesTabsApi } from '../../services/api/sales/salesTabs/serviceSalesTabs'
 import { selectCityApi } from '../../services/api/selectCity/serviceSelectCity'
-import { usersDataApi } from '../../services/api/usersData/serviceUserData'
 import { tabsCatalogApi } from '../../services/api/tabsCatalog/serviceTabsCatalog'
 import { getImgApi } from '../../services/api/getImg/serviceGetImg'
 import { productDayDescriptionApi } from '../../services/api/productDay/serviceProductDayDescription'
 import { salesListPageApi } from '../../services/api/sales/salesListPage/salesListPage'
 import { saleArticleApi } from '../../services/api/sales/saleArticle/serviceSaleArticle'
+import { catalogSortingApi } from '../../services/api/catalogSorting/serviceCatalogSorting'
+import { openFormReducers } from './openFormReducer/openFormSlice'
+import { authReducer } from './authReducer/authSlice'
 
 export const rootReducer = combineReducers({
+	openForm: openFormReducers,
+	authUsers: authReducer,
 	[articlesApi.reducerPath]: articlesApi.reducer,
 	[basketApi.reducerPath]: basketApi.reducer,
 	[catalogFilterApi.reducerPath]: catalogFilterApi.reducer,
@@ -29,10 +33,10 @@ export const rootReducer = combineReducers({
 	[salesCardsApi.reducerPath]: salesCardsApi.reducer,
 	[salesTabsApi.reducerPath]: salesTabsApi.reducer,
 	[selectCityApi.reducerPath]: selectCityApi.reducer,
-	[usersDataApi.reducerPath]: usersDataApi.reducer,
 	[tabsCatalogApi.reducerPath]: tabsCatalogApi.reducer,
 	[getImgApi.reducerPath]: getImgApi.reducer,
 	[productDayDescriptionApi.reducerPath]: productDayDescriptionApi.reducer,
 	[salesListPageApi.reducerPath]: salesListPageApi.reducer,
 	[saleArticleApi.reducerPath]: saleArticleApi.reducer,
+	[catalogSortingApi.reducerPath]: catalogSortingApi.reducer,
 })

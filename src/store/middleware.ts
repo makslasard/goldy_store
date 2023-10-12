@@ -9,12 +9,12 @@ import { salesBannersApi } from '../services/api/sales/salesBanners/serviceSales
 import { salesCardsApi } from '../services/api/sales/salesCards/serviceSalesCards'
 import { salesTabsApi } from '../services/api/sales/salesTabs/serviceSalesTabs'
 import { selectCityApi } from '../services/api/selectCity/serviceSelectCity'
-import { usersDataApi } from '../services/api/usersData/serviceUserData'
 import { tabsCatalogApi } from '../services/api/tabsCatalog/serviceTabsCatalog'
 import { getImgApi } from '../services/api/getImg/serviceGetImg'
 import { productDayDescriptionApi } from '../services/api/productDay/serviceProductDayDescription'
 import { salesListPageApi } from '../services/api/sales/salesListPage/salesListPage'
 import { saleArticleApi } from '../services/api/sales/saleArticle/serviceSaleArticle'
+import { catalogSortingApi } from '../services/api/catalogSorting/serviceCatalogSorting'
 
 export type Middleware =
 	| typeof articlesApi.middleware
@@ -29,11 +29,11 @@ export type Middleware =
 	| typeof salesCardsApi.middleware
 	| typeof salesTabsApi.middleware
 	| typeof selectCityApi.middleware
-	| typeof usersDataApi.middleware
 	| typeof getImgApi.middleware
 	| typeof productDayDescriptionApi.middleware
 	| typeof salesListPageApi.middleware
 	| typeof saleArticleApi.middleware
+	| typeof catalogSortingApi.middleware
 
 export const middleware = (getDefaultMiddleware: () => Middleware[]): Middleware[] => {
 	return getDefaultMiddleware().concat(
@@ -49,11 +49,12 @@ export const middleware = (getDefaultMiddleware: () => Middleware[]): Middleware
 		salesCardsApi.middleware,
 		salesTabsApi.middleware,
 		selectCityApi.middleware,
-		usersDataApi.middleware,
+
 		getImgApi.middleware,
 		popularCategoryApi.middleware,
 		productDayDescriptionApi.middleware,
 		salesListPageApi.middleware,
-		saleArticleApi.middleware
+		saleArticleApi.middleware,
+		catalogSortingApi.middleware
 	)
 }

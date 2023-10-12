@@ -6,7 +6,16 @@
 		list-style: none;
 		width: 930px;
 
-		.menu_item {
+		button {
+			border: none;
+			background-color: transparent;
+
+			p {
+				font-family: 'Montserrat', sans-serif;
+				text-transform: uppercase;
+				font-size: 12px;
+			}
+
 			&:hover {
 				opacity: 0.5;
 				cursor: pointer;

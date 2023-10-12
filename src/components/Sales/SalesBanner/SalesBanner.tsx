@@ -1,15 +1,19 @@
 import React from 'react'
 
+import LoaderUI from '../../UI/LoaderUI/LoaderUI'
+
 import { salesBannersApi } from '../../../services/api/sales/salesBanners/serviceSalesBanners'
 
 import style from './SalesBanner.module.scss'
 
 const SalesBanner: React.FC = () => {
-	const { data: banners } = salesBannersApi.useGetAllSalesBannersQuery('')
+	const { data: banners, isLoading, isError } = salesBannersApi.useGetAllSalesBannersQuery('')
 
 	return (
 		<div className={style.wrapper}>
 			<div className={style.wrapper_banner}>
+				{isLoading && <LoaderUI />}
+				{isError && <h1>Произошла ошибка загрузки...</h1>}
 				{banners?.map((item) => (
 					<div key={item.id} className={style.banner}>
 						<div>

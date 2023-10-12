@@ -1,6 +1,7 @@
 export interface INavigateMenu {
 	id: number
 	name: string
+	path: string
 }
 
 // export enum NavigateMenuEnum {

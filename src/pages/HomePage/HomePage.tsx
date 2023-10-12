@@ -7,10 +7,12 @@ import Article from '../../components/Articles/Article'
 import Sales from '../../components/Sales/Sales'
 
 import style from './HomePage.module.scss'
+import ModalUI from '../../components/UI/ModalUI/ModalUI'
 
 const HomePage: React.FC = () => {
 	return (
 		<div className={style.wrapper}>
+			<ModalUI />
 			<div className={style.banner}>
 				<MainBanner />
 			</div>

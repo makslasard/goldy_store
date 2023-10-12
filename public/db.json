@@ -1,30 +1,4 @@
 {
-  "usersData": [
-    {
-      "userId": 1,
-      "name": "admin",
-      "password": "12345",
-      "basket": [
-        {
-          "id": 1,
-          "name": "Alex"
-        }
-      ],
-      "favourites": []
-    },
-    {
-      "userId": 2,
-      "name": "user",
-      "password": "12345",
-      "basket": [
-        {
-          "id": 2,
-          "name": "Alex"
-        }
-      ],
-      "favourites": []
-    }
-  ],
   "tabsCatalog": [
     {
       "id": 1,
@@ -375,37 +349,61 @@
   "navigateMenu": [
     {
       "id": 1,
-      "name": "Каталог"
+      "name": "Каталог",
+      "path": "/catalog"
     },
     {
       "id": 2,
-      "name": "Акции"
+      "name": "Акции",
+      "path": "/sales"
     },
     {
       "id": 3,
-      "name": "Бренды"
+      "name": "Бренды",
+      "path": "/brands"
     },
     {
       "id": 4,
-      "name": "Магазины"
+      "name": "Магазины",
+      "path": "/shops"
     },
     {
       "id": 5,
-      "name": "О нас"
+      "name": "О нас",
+      "path": "/about_us"
     },
     {
       "id": 6,
-      "name": "Доставка и оплата"
+      "name": "Доставка и оплата",
+      "path": "/delivery_and_payment"
     },
     {
       "id": 7,
-      "name": "Статьи"
+      "name": "Статьи",
+      "path": "/articles"
     }
   ],
   "selectCity": [
-    "Санкт-Петербург",
-    "Москва",
-    "Нижний Новгород",
+    {
+      "id": 1,
+      "name": "Санкт-Петербург",
+      "city": "saint-petersburg"
+    },
+    {
+      "id": 2,
+      "name": "Москва",
+      "city": "moscow"
+    },
+    {
+      "id": 3,
+      "name": "Нижний Новгород",
+      "city": "nizhniy_novgorod"
+    },
+    {
+      "id": 4,
+      "name": "Ростов-на-дону",
+      "city": "rostov-on-don"
+    },
     "Ростов-на-дону"
   ],
   "mainBanner": [
@@ -430,14 +428,38 @@
   ],
   "basket": [],
   "catalogFilters": [
-    "Мужские",
-    "Женские",
-    "Детские"
+    {
+      "id": 1,
+      "name": "Мужские",
+      "category": "men"
+    },
+    {
+      "id": 2,
+      "name": "Женские",
+      "category": "women"
+    },
+    {
+      "id": 3,
+      "name": "Детские",
+      "category": "kids"
+    }
   ],
   "catalogSorting": [
-    "Популярности",
-    "По названию",
-    "По рейтингу"
+    {
+      "id": 1,
+      "name": "По популярности",
+      "sortOption": "by_popularity"
+    },
+    {
+      "id": 2,
+      "name": "По названию",
+      "sortOption": "by_name"
+    },
+    {
+      "id": 3,
+      "name": "По рейтингу",
+      "sortOption": "by_rating"
+    }
   ],
   "saleArticle": [
     {
@@ -490,6 +512,12 @@
       "title": "not-found",
       "category": "not-found",
       "img": "http://localhost:5000/assets/img/basket_notfound_icon-min.svg"
+    },
+    {
+      "id": 8,
+      "title": "basketCard",
+      "category": "basketCard",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg"
     }
   ],
   "saleListPage": [

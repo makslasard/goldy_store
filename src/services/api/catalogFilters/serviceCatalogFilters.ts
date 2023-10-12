@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react'
-import { CatalogFilterEnum } from '../../../types/catalogFilters/catalogFilters.types'
+import { ICatalogFilters } from '../../../types/catalogFilters/catalogFilters.types'
 
 const API_URL = 'http://localhost:5000'
 
@@ -10,7 +10,7 @@ export const catalogFilterApi = createApi({
 		baseUrl: API_URL,
 	}),
 	endpoints: (build) => ({
-		getAllCatalogFilters: build.query<CatalogFilterEnum, string>({
+		getAllCatalogFilters: build.query<ICatalogFilters[], string>({
 			query: () => ({
 				url: '/catalogFilters',
 			}),

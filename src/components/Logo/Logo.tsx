@@ -1,16 +1,31 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
-import style from './Logo.module.scss'
+import { RoutersNames } from '../../routers/routers'
+
+import LoaderUI from '../UI/LoaderUI/LoaderUI'
+
 import { getImgApi } from '../../services/api/getImg/serviceGetImg'
 
+import style from './Logo.module.scss'
+
 const Logo: React.FC = () => {
-	const { data: logo } = getImgApi.useGetAllImgLogoQuery('logo')
+	const navigate = useNavigate()
+	const { data: logo, isLoading, isError } = getImgApi.useGetAllImgLogoQuery('logo')
 
 	return (
 		<div className={style.wrapper}>
-			<div className={style.logo}>
-				{logo?.map((item) => <img key={item.id} src={item.img} alt={item.title} />)}
-			</div>
+			{isLoading && <LoaderUI />}
+			{isError && <h1>Произошла ошибка загрузки...</h1>}
+			{logo?.map((item) => (
+				<button
+					type="button"
+					key={item.id}
+					onClick={() => navigate(RoutersNames.HOME)}
+					style={{ border: 'none', backgroundColor: '#fff' }}>
+					<img src={item.img} alt={item.title} />
+				</button>
+			))}
 		</div>
 	)
 }

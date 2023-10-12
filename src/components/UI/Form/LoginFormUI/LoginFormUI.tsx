@@ -1,21 +1,29 @@
 import React from 'react'
-
 import { Button, Checkbox, Form, Input, message } from 'antd'
 import { LockOutlined, UserOutlined } from '@ant-design/icons'
 
+import { useAppDispatch } from '../../../../hooks/redux'
+
+import { openFormAction } from '../../../../store/reducers/openFormReducer/openFormSlice'
+
 import style from './LoginFormUI.module.scss'
-import { usersDataApi } from '../../../../services/api/usersData/serviceUserData'
+import { authActions } from '../../../../store/reducers/authReducer/authSlice'
+import { IAuthDataUsers } from '../../../../types/auth/auth.types'
 
 const LoginFormUI: React.FC = () => {
-	const { data: userData } = usersDataApi.useGetAllUsersDataQuery('')
 	const [messageApi, contextHolder] = message.useMessage()
+	const dispatch = useAppDispatch()
 
-	const onFinish = (values: any) => {
+	const onFinish = (values: IAuthDataUsers) => {
+		dispatch(authActions.login(values))
+
 		messageApi.open({
 			type: 'success',
 			content: 'Вы успешно вошли!',
 			duration: 3,
 		})
+
+		dispatch(openFormAction.changeStateForm(false))
 	}
 
 	return (
@@ -57,12 +65,17 @@ const LoginFormUI: React.FC = () => {
 						</div>
 					</div>
 				</Form.Item>
-
 				<Form.Item>
 					<Button type="primary" htmlType="submit" className={style.login_button}>
 						Войти
 					</Button>
-					Или <a href="/">зарегистрироваться сейчас!</a>
+					Или
+					<button
+						type="button"
+						className={style.button_login}
+						onClick={() => dispatch(openFormAction.changeFormButton('registration'))}>
+						зарегистрироваться сейчас!
+					</button>
 				</Form.Item>
 			</Form>
 		</>

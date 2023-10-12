@@ -1,18 +1,23 @@
 import React from 'react'
 
-import style from './ProductInfo.module.scss'
-import { productDayApi } from '../../../services/api/productDay/serviceProductDay'
 import ProductTags from '../ProductTags/ProductTags'
 import RatingUI from '../../UI/RatingUI/RatingUI'
 import ProductColors from '../ProductColors/ProductColors'
 import ProductSizes from '../ProductSizes/ProductSizes'
 import ProductActions from '../ProductActions/ProductActions'
+import LoaderUI from '../../UI/LoaderUI/LoaderUI'
+
+import { productDayApi } from '../../../services/api/productDay/serviceProductDay'
+
+import style from './ProductInfo.module.scss'
 
 const ProductInfo = () => {
-	const { data: productInfo } = productDayApi.useGetAllProductInfoQuery('')
+	const { data: productInfo, isLoading, isError } = productDayApi.useGetAllProductInfoQuery('')
 
 	return (
 		<div className={style.wrapper}>
+			{isLoading && <LoaderUI />}
+			{isError && <h1>Произошла ошибка загрузки...</h1>}
 			{productInfo?.map((item) => (
 				<div className={style.wrapper_product}>
 					<div className={style.left}>

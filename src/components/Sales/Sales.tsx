@@ -8,7 +8,7 @@ import style from './Sales.module.scss'
 const Sales: React.FC = () => {
 	return (
 		<div className={style.wrapper}>
-			<h2>Распрадажа</h2>
+			<h2>Распродажа</h2>
 			<div className={style.sales_tabs}>
 				<SalesTabs />
 			</div>

@@ -1,6 +1,9 @@
-export enum SelectCityEnum {
-	SAINT_PETERSBURG = 'Санкт-Петербург',
-	MOSCOW = 'Москва',
-	NIZHNIY_NOVGOROD = 'Нижний Новгород',
-	ROSTOV_ON_DON = 'Ростов-на-дону',
+export interface ISelectCity {
+	id: number
+	name: string
+	city: string
+}
+
+export interface ISelectCityProps {
+	citys: ISelectCity[]
 }

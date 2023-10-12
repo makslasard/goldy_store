@@ -1,10 +1,17 @@
 import React from 'react'
 
-import style from './SalesPage.module.scss'
+import LoaderUI from '../../components/UI/LoaderUI/LoaderUI'
+
 import { salesListPageApi } from '../../services/api/sales/salesListPage/salesListPage'
 
+import style from './SalesPage.module.scss'
+
 const SalesPage: React.FC = () => {
-	const { data: salesListPage } = salesListPageApi.useGetAllSaleListPageQuery('')
+	const {
+		data: salesListPage,
+		isLoading,
+		isError,
+	} = salesListPageApi.useGetAllSaleListPageQuery('')
 
 	return (
 		<div className={style.wrapper}>
@@ -12,6 +19,8 @@ const SalesPage: React.FC = () => {
 				<h2>Акции</h2>
 			</div>
 			<div className={style.sales_list}>
+				{isLoading && <LoaderUI />}
+				{isError && <h1>Произошла ошибка загрузки...</h1>}
 				{salesListPage?.map((sale) => (
 					<div className={style.sale}>
 						<div className={style.image}>

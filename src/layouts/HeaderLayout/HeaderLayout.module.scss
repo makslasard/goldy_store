@@ -7,6 +7,34 @@
 		align-items: center;
 		justify-content: space-between;
 
+		.auth_user {
+			display: flex;
+			align-items: center;
+			gap: 30px;
+
+			.user_name {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+
+				p {
+					font-family: 'Montserrat', sans-serif;
+					font-size: 14px;
+					font-weight: 500;
+				}
+
+				span {
+					font-weight: 400;
+					font-size: 14px;
+				}
+			}
+
+			.user_logout {
+				button {
+				}
+			}
+		}
+
 		.add_product {
 			display: flex;
 			align-items: center;
