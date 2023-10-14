@@ -15,6 +15,7 @@ import { productDayDescriptionApi } from '../services/api/productDay/serviceProd
 import { salesListPageApi } from '../services/api/sales/salesListPage/salesListPage'
 import { saleArticleApi } from '../services/api/sales/saleArticle/serviceSaleArticle'
 import { catalogSortingApi } from '../services/api/catalogSorting/serviceCatalogSorting'
+import { productCatalogApi } from '../services/api/productCatalog/serviceProductCatalog'
 
 export type Middleware =
 	| typeof articlesApi.middleware
@@ -34,6 +35,7 @@ export type Middleware =
 	| typeof salesListPageApi.middleware
 	| typeof saleArticleApi.middleware
 	| typeof catalogSortingApi.middleware
+	| typeof productCatalogApi.middleware
 
 export const middleware = (getDefaultMiddleware: () => Middleware[]): Middleware[] => {
 	return getDefaultMiddleware().concat(
@@ -49,12 +51,12 @@ export const middleware = (getDefaultMiddleware: () => Middleware[]): Middleware
 		salesCardsApi.middleware,
 		salesTabsApi.middleware,
 		selectCityApi.middleware,
-
 		getImgApi.middleware,
 		popularCategoryApi.middleware,
 		productDayDescriptionApi.middleware,
 		salesListPageApi.middleware,
 		saleArticleApi.middleware,
-		catalogSortingApi.middleware
+		catalogSortingApi.middleware,
+		productCatalogApi.middleware
 	)
 }

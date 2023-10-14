@@ -3,17 +3,21 @@ import type { MenuProps } from 'antd'
 import { Dropdown, Space } from 'antd'
 import { DownOutlined, EnvironmentOutlined } from '@ant-design/icons'
 
-import { ISelectCityProps } from '../../../types/selectCity/selectCity.types'
+import { selectCityApi } from '../../../services/api/selectCity/serviceSelectCity'
 
 import style from './DropdownCityUI.module.scss'
 
-const DropdownCityUI: React.FC<ISelectCityProps> = ({ citys }) => {
+const DropdownCityUI: React.FC = () => {
 	const [currentCity, setCurrentCity] = useState<string>('Санкт-Петербург')
+	const { data: citys, isLoading, isError } = selectCityApi.useGetAllSelectCityQuery('')
 
-	const items: MenuProps['items'] = citys.map((city) => {
+	const items: MenuProps['items'] = citys?.map((city) => {
 		return {
 			label: city.name,
 			key: city.id,
+			onClick: () => {
+				setCurrentCity(city.name)
+			},
 		}
 	})
 

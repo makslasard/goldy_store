@@ -1,6 +1,9 @@
 import React from 'react'
 import { Card } from 'antd'
 import { HeartOutlined } from '@ant-design/icons'
+import { useNavigate } from 'react-router-dom'
+// eslint-disable-next-line import/no-cycle
+import { RoutersNames } from '../../../routers/routers'
 
 import RatingUI from '../RatingUI/RatingUI'
 
@@ -9,16 +12,19 @@ import { ISalesCardsProps } from '../../../types/sales/salesCards/salesCards.typ
 import style from './ProductCardUI.module.scss'
 
 const ProductCardUI: React.FC<ISalesCardsProps> = ({ item }) => {
+	const navigate = useNavigate()
+
 	return (
 		<div className={style.wrapper}>
-			<Card hoverable className={style.card}>
+			<Card hoverable className={style.card} onClick={() => navigate(RoutersNames.PRODUCT)}>
+				<div className={style.tags_img}>
+					<span>Еще -{item.sales}%</span>
+				</div>
 				<div className={style.view}>
 					<div className={style.img}>
 						<img src={item.img} alt={item.name} />
 					</div>
-					<div className={style.tags_img}>
-						<span>Еще -{item.sales}%</span>
-					</div>
+
 					<div className={style.favourites}>
 						<button type="button">
 							<HeartOutlined />
@@ -34,7 +40,7 @@ const ProductCardUI: React.FC<ISalesCardsProps> = ({ item }) => {
 								<p>-{item.sales}%</p>
 							</div>
 						</div>
-						<p className={style.title}>Золотое гладкое обручальное кольцо 3 мм</p>
+						<p className={style.title}>{item.name}</p>
 					</div>
 					<div className={style.reviews}>
 						<div>

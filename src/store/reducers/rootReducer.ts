@@ -18,10 +18,21 @@ import { saleArticleApi } from '../../services/api/sales/saleArticle/serviceSale
 import { catalogSortingApi } from '../../services/api/catalogSorting/serviceCatalogSorting'
 import { openFormReducers } from './openFormReducer/openFormSlice'
 import { authReducer } from './authReducer/authSlice'
+import { currentBannerReducers } from './currentBannerReducer/currentBannerSlice'
+import { currentCategoryReducers } from './currentCategory/currentCategorySlice'
+import { currentSizeReducers } from './currentSize/currentSizeSlice'
+import { currentColorReducers } from './currentColor/currentColorSlice'
+import { currentRatingReducers } from './currentRating/currentRatingSlice'
+import { productCatalogApi } from '../../services/api/productCatalog/serviceProductCatalog'
 
 export const rootReducer = combineReducers({
 	openForm: openFormReducers,
 	authUsers: authReducer,
+	currentBanner: currentBannerReducers,
+	currentCategory: currentCategoryReducers,
+	currentSize: currentSizeReducers,
+	currentColor: currentColorReducers,
+	currentRating: currentRatingReducers,
 	[articlesApi.reducerPath]: articlesApi.reducer,
 	[basketApi.reducerPath]: basketApi.reducer,
 	[catalogFilterApi.reducerPath]: catalogFilterApi.reducer,
@@ -39,4 +50,5 @@ export const rootReducer = combineReducers({
 	[salesListPageApi.reducerPath]: salesListPageApi.reducer,
 	[saleArticleApi.reducerPath]: saleArticleApi.reducer,
 	[catalogSortingApi.reducerPath]: catalogSortingApi.reducer,
+	[productCatalogApi.reducerPath]: productCatalogApi.reducer,
 })

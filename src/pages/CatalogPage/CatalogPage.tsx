@@ -1,32 +1,30 @@
 import React from 'react'
 import classnames from 'classnames'
+import { useAppDispatch, useAppSelector } from '../../hooks/redux'
 
 import CatalogSorting from '../../components/CatalogSorting/CatalogSorting'
 import CatalogFilters from '../../components/CatalogFilters/CatalogFilters'
 
+// eslint-disable-next-line import/no-cycle
+import ProductCatalog from '../../components/ProductCatalog/ProductCatalog'
 import LoaderUI from '../../components/UI/LoaderUI/LoaderUI'
-import SalesCards from '../../components/Sales/SalesCards/SalesCards'
 
 import { tabsCatalogApi } from '../../services/api/tabsCatalog/serviceTabsCatalog'
-import { salesCardsApi } from '../../services/api/sales/salesCards/serviceSalesCards'
+import { currentCategoryAction } from '../../store/reducers/currentCategory/currentCategorySlice'
 
 import style from './CatalogPage.module.scss'
 
 const CatalogPage: React.FC = () => {
-	const [activeTab, setActiveTab] = React.useState<string>('')
+	const currentCategory = useAppSelector((state) => state.currentCategory.currentCategory)
+	const dispatch = useAppDispatch()
 	const {
 		data: tabsCatalog,
 		isLoading: isTabsLoading,
 		isError: isTabsError,
 	} = tabsCatalogApi.useGetAllTabsCatalogQuery('')
-	const {
-		data: catalogCards,
-		isLoading: isCatalogLoading,
-		isError: isCatalogError,
-	} = salesCardsApi.useGetAllSalesCardsQuery('')
 
 	const handleTabClick = (category: string) => {
-		setActiveTab(category)
+		dispatch(currentCategoryAction.changeCurrentCategory(category))
 	}
 
 	return (
@@ -42,7 +40,7 @@ const CatalogPage: React.FC = () => {
 						<button
 							type="button"
 							className={classnames(style.tabs_button, {
-								[style.active]: activeTab === tab.category,
+								[style.active]: currentCategory === tab.category,
 							})}
 							onClick={() => handleTabClick(tab.category)}>
 							<p>{tab.name}</p>
@@ -59,13 +57,9 @@ const CatalogPage: React.FC = () => {
 				</div>
 			</div>
 			<div className={style.card_category}>
-				{isCatalogLoading && <LoaderUI />}
-				{isCatalogError && <h1>Произошла ошибка загрузки...</h1>}
-				{catalogCards?.map((card) => (
-					<div>
-						<SalesCards />
-					</div>
-				))}
+				<div>
+					<ProductCatalog />
+				</div>
 			</div>
 		</div>
 	)

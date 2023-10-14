@@ -1,0 +1,9 @@
+.wrapper {
+	.favourites_icon {
+		&:hover {
+			transition: all 0.3s;
+			cursor: pointer;
+			opacity: 0.5;
+		}
+	}
+}

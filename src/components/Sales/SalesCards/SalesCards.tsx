@@ -1,6 +1,8 @@
 import React from 'react'
+import { useAppSelector } from '../../../hooks/redux'
 
 import LoaderUI from '../../UI/LoaderUI/LoaderUI'
+// eslint-disable-next-line import/no-cycle
 import ProductCardUI from '../../UI/ProductCardUI/ProductCardUI'
 
 import { salesCardsApi } from '../../../services/api/sales/salesCards/serviceSalesCards'
@@ -8,7 +10,12 @@ import { salesCardsApi } from '../../../services/api/sales/salesCards/serviceSal
 import style from './SalesCards.module.scss'
 
 const SalesCards: React.FC = () => {
-	const { data: salesCard, isLoading, isError } = salesCardsApi.useGetAllSalesCardsQuery('')
+	const currentCategory = useAppSelector((state) => state.currentCategory.currentCategory)
+	const {
+		data: salesCard,
+		isLoading,
+		isError,
+	} = salesCardsApi.useGetAllSalesCardsCategoryQuery(currentCategory)
 
 	return (
 		<div className={style.wrapper}>

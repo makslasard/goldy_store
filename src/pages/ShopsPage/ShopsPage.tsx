@@ -1,8 +1,8 @@
 import React from 'react'
 
-import style from './Shops.module.scss'
+import style from './ShopsPage.module.scss'
 
-const Shops: React.FC = () => {
+const ShopsPage: React.FC = () => {
 	return (
 		<div className={style.wrapper}>
 			<h1>Shops</h1>
@@ -10,4 +10,4 @@ const Shops: React.FC = () => {
 	)
 }
 
-export default Shops
+export default ShopsPage

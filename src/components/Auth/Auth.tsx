@@ -1,8 +1,9 @@
 import React from 'react'
 
-import style from './Auth.module.scss'
 import Login from './Login/Login'
 import Registration from './Registration/Registration'
+
+import style from './Auth.module.scss'
 
 const Auth: React.FC = () => {
 	return (

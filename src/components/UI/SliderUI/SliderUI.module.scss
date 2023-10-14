@@ -61,5 +61,21 @@
 			text-transform: uppercase;
 			font-weight: 600;
 		}
+
+		button {
+			font-family: 'Montserrat', sans-serif;
+			width: 200px;
+			height: 54px;
+			background-color: #303030;
+			border: none;
+			color: #ffffff;
+			text-transform: uppercase;
+			cursor: pointer;
+
+			&:hover {
+				transition: all 0.3s;
+				opacity: 0.5;
+			}
+		}
 	}
 }

@@ -1,55 +1,83 @@
 {
-  "tabsCatalog": [
+  "basket": [
+    {
+      "id_product": 1,
+      "id_user": 1,
+      "category_product": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 15,
+      "quantity": 2,
+      "oldPrice": 11640,
+      "newPrice": 10760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Женские"
+    }
+  ],
+  "favourites": [
+    {
+      "id_product": 1,
+      "id_user": 1,
+      "category_product": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 15,
+      "quantity": 2,
+      "oldPrice": 11640,
+      "newPrice": 10760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Женские"
+    }
+  ],
+  "compare": [],
+  "mainBanner": [
     {
       "id": 1,
-      "name": "Кольца",
-      "category": "rings"
+      "img": "http://localhost:5000/assets/img/main_banner/ring-min.svg",
+      "subtitle": "Суперскидка до 60%",
+      "title": "На украшения с брилиантами"
     },
     {
       "id": 2,
-      "name": "Серьги",
-      "category": "earrings"
+      "img": "http://localhost:5000/assets/img/main_banner/ring-min.svg",
+      "subtitle": "Суперскидка до 30%",
+      "title": "На кольца из золота"
     },
     {
       "id": 3,
-      "name": "Подвески",
-      "category": "suspensions"
-    },
-    {
-      "id": 4,
-      "name": "Цепочки",
-      "category": "chains"
-    },
-    {
-      "id": 5,
-      "name": "Браслеты",
-      "category": "bracelets"
-    },
-    {
-      "id": 6,
-      "name": "Свадьба",
-      "category": "wedding"
-    },
-    {
-      "id": 7,
-      "name": "Часы",
-      "category": "watch"
-    },
-    {
-      "id": 8,
-      "name": "Аксуссуары",
-      "category": "accessories"
-    },
-    {
-      "id": 9,
-      "name": "Столовое серебро",
-      "category": "silverware"
+      "img": "http://localhost:5000/assets/img/main_banner/ring-min.svg",
+      "subtitle": "Суперскидка до 50%",
+      "title": "На серебрянные украшения"
     }
   ],
   "salesCards": [
     {
       "id": 1,
-      "category": "watch",
+      "category": "rings",
       "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
       "name": "Золотое гладкое обручальное кольцо 3 мм",
       "size": 19,
@@ -89,15 +117,15 @@
       ],
       "sales": 20,
       "quantity": 2,
-      "oldPrice": 11640,
-      "newPrice": 10760,
+      "oldPrice": 23440,
+      "newPrice": 18560,
       "popular": 10,
       "rating": "4,5",
       "filters": "Мужские"
     },
     {
       "id": 3,
-      "category": "earrings",
+      "category": "rings",
       "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
       "name": "Золотое гладкое обручальное кольцо 3 мм",
       "size": 19,
@@ -111,13 +139,13 @@
           "review": "Удобное, по размеру подходит!"
         }
       ],
-      "sales": 25,
+      "sales": 20,
       "quantity": 2,
-      "oldPrice": 11640,
-      "newPrice": 10760,
+      "oldPrice": 34240,
+      "newPrice": 12760,
       "popular": 10,
       "rating": "4,5",
-      "filters": "Детские"
+      "filters": "Мужские"
     },
     {
       "id": 4,
@@ -135,63 +163,361 @@
           "review": "Удобное, по размеру подходит!"
         }
       ],
-      "sales": 30,
+      "sales": 20,
       "quantity": 2,
-      "oldPrice": 11640,
-      "newPrice": 10760,
+      "oldPrice": 23540,
+      "newPrice": 17360,
       "popular": 10,
       "rating": "4,5",
-      "filters": "Женские"
+      "filters": "Мужские"
+    },
+    {
+      "id": 5,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 10,
+      "quantity": 2,
+      "oldPrice": 112640,
+      "newPrice": 100760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
+    },
+    {
+      "id": 6,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 15,
+      "quantity": 2,
+      "oldPrice": 231640,
+      "newPrice": 210760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
+    },
+    {
+      "id": 7,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 20,
+      "quantity": 2,
+      "oldPrice": 72640,
+      "newPrice": 54760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
+    },
+    {
+      "id": 8,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 23640,
+      "newPrice": 12760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
+    },
+    {
+      "id": 9,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 30,
+      "quantity": 2,
+      "oldPrice": 76640,
+      "newPrice": 34760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
+    },
+    {
+      "id": 10,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 15,
+      "quantity": 2,
+      "oldPrice": 324640,
+      "newPrice": 302760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
+    },
+    {
+      "id": 11,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 26,
+      "quantity": 2,
+      "oldPrice": 112640,
+      "newPrice": 110760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
+    },
+    {
+      "id": 12,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 19,
+      "quantity": 2,
+      "oldPrice": 33640,
+      "newPrice": 28760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
+    },
+    {
+      "id": 13,
+      "category": "watch",
+      "img": "http://localhost:5000/assets/img/sales/watch/watch_1.svg",
+      "name": "Часы из розового золота с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 15,
+      "quantity": 2,
+      "oldPrice": 93640,
+      "newPrice": 87760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
+    },
+    {
+      "id": 14,
+      "category": "watch",
+      "img": "http://localhost:5000/assets/img/sales/watch/watch_1.svg",
+      "name": "Часы из розового золота с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 10,
+      "quantity": 2,
+      "oldPrice": 45640,
+      "newPrice": 21760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
+    },
+    {
+      "id": 15,
+      "category": "watch",
+      "img": "http://localhost:5000/assets/img/sales/watch/watch_1.svg",
+      "name": "Часы из розового золота с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 22640,
+      "newPrice": 17760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
+    },
+    {
+      "id": 16,
+      "category": "watch",
+      "img": "http://localhost:5000/assets/img/sales/watch/watch_1.svg",
+      "name": "Часы из розового золота с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": "4,5",
+      "filters": "Детские"
     }
   ],
   "popularCategory": [
     {
       "id": 1,
       "img": "http://localhost:5000/assets/img/popular_categorys/rings-min.svg",
-      "name": "Кольца"
+      "name": "Кольца",
+      "category": "rings"
     },
     {
       "id": 2,
       "img": "http://localhost:5000/assets/img/popular_categorys/earrings-min.svg",
-      "name": "Серьги"
+      "name": "Серьги",
+      "category": "earrings"
     },
     {
       "id": 3,
       "img": "http://localhost:5000/assets/img/popular_categorys/engagement_rings-min.svg",
-      "name": "Помолвочные кольца"
+      "name": "Помолвочные кольца",
+      "category": "wedding"
     },
     {
       "id": 4,
       "img": "http://localhost:5000/assets/img/popular_categorys/bracelets-min.svg",
-      "name": "Браслеты"
+      "name": "Браслеты",
+      "category": "bracelets"
     },
     {
       "id": 5,
       "img": "http://localhost:5000/assets/img/popular_categorys/necklaces_and_pendants-min.svg",
-      "name": "Колье и подвески"
+      "name": "Колье и подвески",
+      "category": "suspensions"
     },
     {
       "id": 6,
       "img": "http://localhost:5000/assets/img/popular_categorys/watch-min.svg",
-      "name": "Часы"
+      "name": "Часы",
+      "category": "watch"
     }
   ],
   "salesTabs": [
     {
       "id": 1,
-      "name": "Кольца"
+      "name": "Кольца",
+      "category": "rings"
     },
     {
       "id": 2,
-      "name": "Серьги"
+      "name": "Серьги",
+      "category": "earrings"
     },
     {
       "id": 3,
-      "name": "Браслеты"
+      "name": "Браслеты",
+      "category": "bracelets"
     },
     {
       "id": 4,
-      "name": "Часы"
+      "name": "Часы",
+      "category": "watch"
     }
   ],
   "salesBanners": [
@@ -270,49 +596,49 @@
     {
       "id": 8,
       "size": 16.5,
-      "in_stock": true,
+      "inStock": true,
       "category": "sizes"
     },
     {
       "id": 9,
       "size": 17,
-      "in_stock": true,
+      "inStock": true,
       "category": "sizes"
     },
     {
       "id": 10,
       "size": 17.5,
-      "in_stock": true,
+      "inStock": true,
       "category": "sizes"
     },
     {
       "id": 11,
       "size": 18,
-      "in_stock": true,
+      "inStock": true,
       "category": "sizes"
     },
     {
       "id": 12,
       "size": 18.5,
-      "in_stock": true,
+      "inStock": true,
       "category": "sizes"
     },
     {
       "id": 13,
       "size": 19,
-      "in_stock": false,
+      "inStock": false,
       "category": "sizes"
     },
     {
       "id": 14,
       "size": 19.5,
-      "in_stock": false,
+      "inStock": false,
       "category": "sizes"
     },
     {
       "id": 15,
       "size": 20,
-      "in_stock": false,
+      "inStock": false,
       "category": "sizes"
     }
   ],
@@ -406,27 +732,6 @@
     },
     "Ростов-на-дону"
   ],
-  "mainBanner": [
-    {
-      "id": 1,
-      "img": "http://localhost:5000/assets/img/main_banner/briliant-min.svg",
-      "subtitle": "Суперскидка до 60%",
-      "title": "На брилианты"
-    },
-    {
-      "id": 2,
-      "img": "http://localhost:5000/assets/img/main_banner/briliant-min.svg",
-      "subtitle": "Суперскидка до 60%",
-      "title": "На брилианты"
-    },
-    {
-      "id": 3,
-      "img": "http://localhost:5000/assets/img/main_banner/briliant-min.svg",
-      "subtitle": "Суперскидка до 60%",
-      "title": "На брилианты"
-    }
-  ],
-  "basket": [],
   "catalogFilters": [
     {
       "id": 1,
@@ -576,6 +881,1351 @@
       "category": "salePage",
       "img": "http://localhost:5000/assets/img/sales/preview_sales-min.svg",
       "date": "с 31 августа по 30 сентября"
+    }
+  ],
+  "tabsCatalog": [
+    {
+      "id": 1,
+      "name": "Кольца",
+      "category": "rings"
+    },
+    {
+      "id": 2,
+      "name": "Серьги",
+      "category": "earrings"
+    },
+    {
+      "id": 3,
+      "name": "Подвески",
+      "category": "suspensions"
+    },
+    {
+      "id": 4,
+      "name": "Цепочки",
+      "category": "chains"
+    },
+    {
+      "id": 5,
+      "name": "Браслеты",
+      "category": "bracelets"
+    },
+    {
+      "id": 6,
+      "name": "Свадьба",
+      "category": "wedding"
+    },
+    {
+      "id": 7,
+      "name": "Часы",
+      "category": "watch"
+    },
+    {
+      "id": 8,
+      "name": "Аксуссуары",
+      "category": "accessories"
+    },
+    {
+      "id": 9,
+      "name": "Столовое серебро",
+      "category": "silverware"
+    }
+  ],
+  "productCatalog": [
+    {
+      "id": 1,
+      "category": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 1.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 2,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2,
+      "filters": "Детские"
+    },
+    {
+      "id": 3,
+      "category": "suspensions",
+      "img": "http://localhost:5000/assets/img/sales/suspensions/suspensions.svg",
+      "name": "Подвеска из белого золота 285 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 5,
+      "filters": "Детские"
+    },
+    {
+      "id": 4,
+      "category": "chains",
+      "img": "http://localhost:5000/assets/img/sales/watch/watch_1.svg",
+      "name": "Цепочка золотая с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 5,
+      "filters": "Детские"
+    },
+    {
+      "id": 5,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из розового золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 4.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 6,
+      "category": "wedding",
+      "img": "http://localhost:5000/assets/img/sales/wedding/wedding.svg",
+      "name": "Помолвочные кольца из золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 7,
+      "category": "watch",
+      "img": "http://localhost:5000/assets/img/sales/watch/watch_1.svg",
+      "name": "Часы из розового золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 3,
+      "filters": "Детские"
+    },
+    {
+      "id": 8,
+      "category": "accessories",
+      "img": "http://localhost:5000/assets/img/sales/watch/watch_1.svg",
+      "name": "Аксессуары из золота и серебра",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 3.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 9,
+      "category": "silverware",
+      "img": "http://localhost:5000/assets/img/sales/watch/watch_1.svg",
+      "name": "Столовое серебро с позалотой",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 4.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 10,
+      "category": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 1.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 11,
+      "category": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 1.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 12,
+      "category": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 1.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 13,
+      "category": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 1.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 14,
+      "category": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 1.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 15,
+      "category": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 1.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 16,
+      "category": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 1.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 17,
+      "category": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 1.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 18,
+      "category": "rings",
+      "img": "http://localhost:5000/assets/img/sales/rings/rings.svg",
+      "name": "Золотое гладкое обручальное кольцо 3 мм",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 1.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 19,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2,
+      "filters": "Детские"
+    },
+    {
+      "id": 20,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2,
+      "filters": "Детские"
+    },
+    {
+      "id": 21,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2,
+      "filters": "Детские"
+    },
+    {
+      "id": 22,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2,
+      "filters": "Детские"
+    },
+    {
+      "id": 23,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2,
+      "filters": "Детские"
+    },
+    {
+      "id": 24,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2,
+      "filters": "Детские"
+    },
+    {
+      "id": 25,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2,
+      "filters": "Детские"
+    },
+    {
+      "id": 26,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2,
+      "filters": "Детские"
+    },
+    {
+      "id": 27,
+      "category": "earrings",
+      "img": "http://localhost:5000/assets/img/sales/earrings/earrings.svg",
+      "name": "Серьги из белого золота 585 пробы с бриллиантами",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2,
+      "filters": "Детские"
+    },
+    {
+      "id": 28,
+      "category": "suspensions",
+      "img": "http://localhost:5000/assets/img/sales/suspensions/suspensions.svg",
+      "name": "Подвеска из белого золота 285 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 5,
+      "filters": "Детские"
+    },
+    {
+      "id": 29,
+      "category": "suspensions",
+      "img": "http://localhost:5000/assets/img/sales/suspensions/suspensions.svg",
+      "name": "Подвеска из белого золота 285 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 5,
+      "filters": "Детские"
+    },
+    {
+      "id": 30,
+      "category": "suspensions",
+      "img": "http://localhost:5000/assets/img/sales/suspensions/suspensions.svg",
+      "name": "Подвеска из белого золота 285 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 5,
+      "filters": "Детские"
+    },
+    {
+      "id": 31,
+      "category": "suspensions",
+      "img": "http://localhost:5000/assets/img/sales/suspensions/suspensions.svg",
+      "name": "Подвеска из белого золота 285 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 5,
+      "filters": "Детские"
+    },
+    {
+      "id": 32,
+      "category": "suspensions",
+      "img": "http://localhost:5000/assets/img/sales/suspensions/suspensions.svg",
+      "name": "Подвеска из белого золота 285 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 5,
+      "filters": "Детские"
+    },
+    {
+      "id": 33,
+      "category": "suspensions",
+      "img": "http://localhost:5000/assets/img/sales/suspensions/suspensions.svg",
+      "name": "Подвеска из белого золота 285 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 5,
+      "filters": "Детские"
+    },
+    {
+      "id": 34,
+      "category": "suspensions",
+      "img": "http://localhost:5000/assets/img/sales/suspensions/suspensions.svg",
+      "name": "Подвеска из белого золота 285 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 5,
+      "filters": "Детские"
+    },
+    {
+      "id": 35,
+      "category": "suspensions",
+      "img": "http://localhost:5000/assets/img/sales/suspensions/suspensions.svg",
+      "name": "Подвеска из белого золота 285 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 5,
+      "filters": "Детские"
+    },
+    {
+      "id": 36,
+      "category": "suspensions",
+      "img": "http://localhost:5000/assets/img/sales/suspensions/suspensions.svg",
+      "name": "Подвеска из белого золота 285 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 5,
+      "filters": "Детские"
+    },
+    {
+      "id": 37,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из розового золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 4.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 38,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из розового золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 4.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 39,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из розового золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 4.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 40,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из розового золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 4.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 41,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из розового золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 4.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 42,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из розового золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 4.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 43,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из розового золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 4.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 44,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из розового золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 4.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 45,
+      "category": "bracelets",
+      "img": "http://localhost:5000/assets/img/sales/bracelets/bracelets.svg",
+      "name": "Браслет из розового золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 4.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 46,
+      "category": "wedding",
+      "img": "http://localhost:5000/assets/img/sales/wedding/wedding.svg",
+      "name": "Помолвочные кольца из золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 47,
+      "category": "wedding",
+      "img": "http://localhost:5000/assets/img/sales/wedding/wedding.svg",
+      "name": "Помолвочные кольца из золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 48,
+      "category": "wedding",
+      "img": "http://localhost:5000/assets/img/sales/wedding/wedding.svg",
+      "name": "Помолвочные кольца из золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 49,
+      "category": "wedding",
+      "img": "http://localhost:5000/assets/img/sales/wedding/wedding.svg",
+      "name": "Помолвочные кольца из золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 50,
+      "category": "wedding",
+      "img": "http://localhost:5000/assets/img/sales/wedding/wedding.svg",
+      "name": "Помолвочные кольца из золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 51,
+      "category": "wedding",
+      "img": "http://localhost:5000/assets/img/sales/wedding/wedding.svg",
+      "name": "Помолвочные кольца из золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 52,
+      "category": "wedding",
+      "img": "http://localhost:5000/assets/img/sales/wedding/wedding.svg",
+      "name": "Помолвочные кольца из золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 53,
+      "category": "wedding",
+      "img": "http://localhost:5000/assets/img/sales/wedding/wedding.svg",
+      "name": "Помолвочные кольца из золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2.5,
+      "filters": "Детские"
+    },
+    {
+      "id": 54,
+      "category": "wedding",
+      "img": "http://localhost:5000/assets/img/sales/wedding/wedding.svg",
+      "name": "Помолвочные кольца из золота 585 пробы",
+      "size": 19,
+      "in_stock": true,
+      "stocks": 3,
+      "reviews": [
+        {
+          "img": "",
+          "name": "Александр",
+          "product": "Золотое гладкое обручальное кольцо 3 мм",
+          "review": "Удобное, по размеру подходит!"
+        }
+      ],
+      "sales": 25,
+      "quantity": 2,
+      "oldPrice": 88640,
+      "newPrice": 76760,
+      "popular": 10,
+      "rating": 2.5,
+      "filters": "Детские"
     }
   ]
 }

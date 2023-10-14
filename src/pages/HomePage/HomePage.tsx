@@ -1,5 +1,7 @@
 import React from 'react'
 
+import ModalUI from '../../components/UI/ModalUI/ModalUI'
+// eslint-disable-next-line import/no-cycle
 import MainBanner from '../../components/MainBanner/MainBanner'
 import PopularCategory from '../../components/PopularCategory/PopularCategory'
 import ProductDay from '../../components/ProductDay/ProductDay'
@@ -7,7 +9,6 @@ import Article from '../../components/Articles/Article'
 import Sales from '../../components/Sales/Sales'
 
 import style from './HomePage.module.scss'
-import ModalUI from '../../components/UI/ModalUI/ModalUI'
 
 const HomePage: React.FC = () => {
 	return (

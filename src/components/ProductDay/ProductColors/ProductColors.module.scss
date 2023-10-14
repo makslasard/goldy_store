@@ -18,9 +18,9 @@ h4 {
 		border-radius: 50%;
 		height: 32px;
 		width: 32px;
+		background-color: #fff;
 
 		&:hover {
-			border: 1px solid #303030;
 			cursor: pointer;
 			transition: all 0.3s;
 		}
@@ -30,5 +30,15 @@ h4 {
 			width: 24px;
 			border-radius: 50%;
 		}
+	}
+
+	.active {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #303030;
+		border-radius: 50%;
+		height: 32px;
+		width: 32px;
 	}
 }

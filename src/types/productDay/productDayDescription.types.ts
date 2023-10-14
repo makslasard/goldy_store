@@ -14,6 +14,6 @@ export interface IProductDayColors {
 export interface IProductDaySizes {
 	id: number
 	size: number
-	in_stock: boolean
+	inStock: boolean
 	category: string
 }

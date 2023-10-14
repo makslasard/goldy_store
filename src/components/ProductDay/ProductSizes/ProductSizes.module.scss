@@ -13,6 +13,10 @@
 		align-items: center;
 		gap: 5px;
 
+		p {
+			font-size: 14px;
+		}
+
 		.size_button {
 			display: flex;
 			align-items: center;
@@ -21,17 +25,29 @@
 			width: 50px;
 			border: 1px solid #dadada;
 			transition: all 0.3s;
-
-			&:hover {
-				cursor: pointer;
-				background-color: #303030;
-
-				color: #fff;
-			}
+			background-color: #fff;
+			cursor: pointer;
 		}
 
-		p {
-			font-size: 14px;
+		.active {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 32px;
+			width: 50px;
+			border: 1px solid #dadada;
+			transition: all 0.3s;
+			background-color: #303030;
+			color: #fff;
+		}
+
+		.end {
+			height: 32px;
+			width: 50px;
+			border: 1px solid #dadada;
+			background-color: #fff;
+			opacity: 0.3;
+			pointer-events: none;
 		}
 	}
 }

@@ -1,39 +1,39 @@
-import React, { useState } from 'react'
-import { Tabs, TabsProps } from 'antd'
+import React from 'react'
+import classnames from 'classnames'
+import { useAppDispatch, useAppSelector } from '../../../hooks/redux'
+
+import LoaderUI from '../../UI/LoaderUI/LoaderUI'
+
 import { salesTabsApi } from '../../../services/api/sales/salesTabs/serviceSalesTabs'
+import { currentCategoryAction } from '../../../store/reducers/currentCategory/currentCategorySlice'
 
 import style from './SalesTabs.module.scss'
-import { salesCardsApi } from '../../../services/api/sales/salesCards/serviceSalesCards'
-import SalesCards from '../SalesCards/SalesCards'
 
 const SalesTabs: React.FC = () => {
-	const [currentTab, setCurrentTab] = useState<string>('')
-	const { data: salesTabs } = salesTabsApi.useGetAllSalesTabsQuery('')
+	const { data: salesTabs, isLoading, isError } = salesTabsApi.useGetAllSalesTabsQuery('')
+	const currentCategory = useAppSelector((state) => state.currentCategory.currentCategory)
+	const dispatch = useAppDispatch()
 
-	const onChange = (key: string) => {
-		setCurrentTab(key)
-	}
-
-	const saveCurrentTab = (label: string) => {
-		setCurrentTab(label)
-	}
-
-	const getCardsByCategory = async (category: string) => {
-		const { data } = await salesCardsApi.useGetAllSalesCardsCategoryQuery(category)
-		return data
-	}
-
-	function items(): TabsProps['items'] {
-		return salesTabs?.map((tab) => ({
-			key: `${tab.id}`,
-			label: tab.name,
-			children: <SalesCards />,
-		}))
+	const handleTabClick = (category: string) => {
+		dispatch(currentCategoryAction.changeCurrentCategory(category))
 	}
 
 	return (
-		<div className={style.wrapper}>
-			<Tabs defaultActiveKey="1" items={items()} onChange={onChange} />
+		<div className={style.tabs}>
+			{isLoading && <LoaderUI />}
+			{isError && <h1>Произошла ошибка загрузки...</h1>}
+			{salesTabs?.map((tab) => (
+				<div key={tab.id} className={style.wrapper_tabs}>
+					<button
+						type="button"
+						className={classnames(style.tabs_button, {
+							[style.active]: currentCategory === tab.category,
+						})}
+						onClick={() => handleTabClick(tab.category)}>
+						<p>{tab.name}</p>
+					</button>
+				</div>
+			))}
 		</div>
 	)
 }

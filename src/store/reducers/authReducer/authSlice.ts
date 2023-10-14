@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { IAuthDataUsers, IAuthState } from '../../../types/auth/auth.types'
 
 const initialState: IAuthState = {
-	isAuth: true,
+	isAuth: false,
 	authDateUsers: [
 		{ username: 'user', password: '123' },
 		{ username: 'admin', password: '123' },
